@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        @apply bg-gray-900 text-white m-0 p-0 box-border;
+    }
+}
+
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
