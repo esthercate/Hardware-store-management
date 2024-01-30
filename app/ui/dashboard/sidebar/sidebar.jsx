@@ -2,6 +2,8 @@ import React from 'react'
 import { MdDashboardCustomize, MdHardware, MdAnalytics, MdLogout } from 'react-icons/md'
 import { FaFileInvoiceDollar } from 'react-icons/fa'
 import { TbReport } from 'react-icons/tb'
+import MenuLink from '../sidebar/menulink/menulink'
+import Image from 'next/image'
 
 const menuItems = [
   {
@@ -41,7 +43,18 @@ const menuItems = [
 ]
 
 const Sidebar = () => {
-  return <div>Sidebar</div>
+  return (
+    <div className='sticky top-10'>
+      <div className='flex justify-center'>
+        <Image src='/hw-logo.png' alt='Logo' width='150' height='150' />
+      </div>
+      <ul className='list-none'>
+        {menuItems.map((menuItem, index) => (
+          <MenuLink items={menuItem.list} key={index} />
+        ))}
+      </ul>
+    </div>
+  )
 }
 
 export default Sidebar
