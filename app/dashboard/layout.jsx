@@ -8,8 +8,10 @@ const Layout = ({ children }) => {
       <div className='basis-1/4 bg-slate-900 p-5'>
         <Sidebar />
       </div>
-      <div className='basis-3/4 bg-slate-900 p-5'>
-        <Navbar />
+      <div className='basis-3/4 p-5'>
+        <div className='bg-slate-900'>
+          <Navbar />
+        </div>
         {children}
       </div>
     </div>
