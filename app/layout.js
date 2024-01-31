@@ -1,7 +1,12 @@
-import { Inter } from "next/font/google";
 import "./ui/globals.css";
+import { Josefin_Sans} from 'next/font/google'
 
-const inter = Inter({ subsets: ["latin"] });
+const josefin_Sans = Josefin_Sans({
+  weight: ['100', '300', '500', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: "Hardware Store",
@@ -10,8 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en' className={josefin_Sans.className}>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
