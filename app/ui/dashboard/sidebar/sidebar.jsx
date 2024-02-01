@@ -33,11 +33,6 @@ const menuItems = [
         path: '/dashboard/reports',
         icon: <TbReport />,
       },
-      {
-        title: 'Logout',
-        path: '/',
-        icon: <MdLogout />,
-      },
     ],
   },
 ]
@@ -53,6 +48,9 @@ const Sidebar = () => {
           <MenuLink items={menuItem.list} key={index} />
         ))}
       </ul>
+      <button className='flex py-7 px-4 items-center w-full gap-4 my-5 rounded-lg hover:text-slate-400 bg-transparent hover:bg-slate-800'>
+        <MdLogout /> Logout
+      </button>
     </div>
   )
 }

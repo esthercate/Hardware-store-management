@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <Sidebar />
       </div>
       <div className='basis-3/4 p-5'>
-        <div className='bg-slate-900'>
+        <div>
           <Navbar />
         </div>
         {children}
