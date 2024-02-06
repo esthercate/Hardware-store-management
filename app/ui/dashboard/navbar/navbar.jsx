@@ -18,9 +18,7 @@ const Navbar = () => {
         <div className='flex gap-5'>
           <MdNotifications size={20} />
           <MdSettings size={20} />
-          <div className='flex gap-2'>
-            <FaUser size={18} />
-          </div>
+          <FaUser size={18} />
         </div>
       </div>
     </div>
