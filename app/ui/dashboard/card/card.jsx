@@ -12,6 +12,7 @@ const Card = () => {
       <div>
         <PiChartLineUpLight size={25} />
         {/* //!Todo conditionally display this icon */}
+        {/*CurrentPercentage > previousPercentage ? <PiChartLineUpLight size={25} /> : <PiChartLineDownLight />  */}
         {/* <PiChartLineDownLight /> */}
       </div>
     </div>
