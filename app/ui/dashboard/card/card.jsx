@@ -7,7 +7,7 @@ const Card = () => {
       <div className='texts flex flex-col gap-4 '>
         <span>Daily sales</span>
         <span>Ksh. 24,000</span>
-        <span>Increased by 60%</span>
+        <span>Increased by 80%</span>
       </div>
       <div>
         <PiChartLineUpLight size={25} />
