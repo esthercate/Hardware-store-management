@@ -16,25 +16,25 @@ const Transaction = () => {
         <tbody>
           <tr>
             <td className='p-2.5'>John Doe</td>
-            <td className='p-2.5'>Paid</td>
+            <td className='p-2.5 text-green-700'>Paid</td>
             <td className='p-2.5'>12.02.2024</td>
             <td className='p-2.5'>Ksh. 2,000</td>
           </tr>
           <tr>
             <td className='p-2.5'>Jane Doe</td>
-            <td className='p-2.5'>Unpaid</td>
+            <td className='p-2.5 text-red-700'>Unpaid</td>
             <td className='p-2.5'>12.02.2024</td>
             <td className='p-2.5'>Ksh. 2,000</td>
           </tr>
           <tr>
             <td className='p-2.5'>Joni Doe</td>
-            <td className='p-2.5'>Paid</td>
+            <td className='p-2.5 text-green-700'>Paid</td>
             <td className='p-2.5'>12.02.2024</td>
             <td className='p-2.5'>Ksh. 2,000</td>
           </tr>
           <tr>
             <td className='p-2.5'>Jose Doe</td>
-            <td className='p-2.5'>Unpaid</td>
+            <td className='p-2.5 text-red-700'>Unpaid</td>
             <td className='p-2.5'>12.02.2024</td>
             <td className='p-2.5'>Ksh. 2,000</td>
           </tr>
