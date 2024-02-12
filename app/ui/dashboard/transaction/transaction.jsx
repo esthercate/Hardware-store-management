@@ -2,41 +2,41 @@ import React from 'react'
 
 const Transaction = () => {
   return (
-    <div>
-      <h2>Latest Transactions</h2>
-      <table>
+    <div className='bg-slate-900 p-5 rounded-lg'>
+      <h2 className='mb-5 font-light text-xl text-slate-400'>Latest Transactions</h2>
+      <table className='w-full'>
         <thead>
           <tr>
-            <td>Name</td>
-            <td>Status</td>
-            <td>Date</td>
-            <td>Amount</td>
+            <td className='p-2.5'>Name</td>
+            <td className='p-2.5'>Status</td>
+            <td className='p-2.5'>Date</td>
+            <td className='p-2.5'>Amount</td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>John Doe</td>
-            <td>Paid</td>
-            <td>12.02.2024</td>
-            <td>Ksh. 2,000</td>
+            <td className='p-2.5'>John Doe</td>
+            <td className='p-2.5'>Paid</td>
+            <td className='p-2.5'>12.02.2024</td>
+            <td className='p-2.5'>Ksh. 2,000</td>
           </tr>
           <tr>
-            <td>Jane Doe</td>
-            <td>Paid</td>
-            <td>12.02.2024</td>
-            <td>Ksh. 2,000</td>
+            <td className='p-2.5'>Jane Doe</td>
+            <td className='p-2.5'>Unpaid</td>
+            <td className='p-2.5'>12.02.2024</td>
+            <td className='p-2.5'>Ksh. 2,000</td>
           </tr>
           <tr>
-            <td>Joni Doe</td>
-            <td>Paid</td>
-            <td>12.02.2024</td>
-            <td>Ksh. 2,000</td>
+            <td className='p-2.5'>Joni Doe</td>
+            <td className='p-2.5'>Paid</td>
+            <td className='p-2.5'>12.02.2024</td>
+            <td className='p-2.5'>Ksh. 2,000</td>
           </tr>
           <tr>
-            <td>Jose Doe</td>
-            <td>Paid</td>
-            <td>12.02.2024</td>
-            <td>Ksh. 2,000</td>
+            <td className='p-2.5'>Jose Doe</td>
+            <td className='p-2.5'>Unpaid</td>
+            <td className='p-2.5'>12.02.2024</td>
+            <td className='p-2.5'>Ksh. 2,000</td>
           </tr>
         </tbody>
       </table>
