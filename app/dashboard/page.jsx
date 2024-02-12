@@ -12,6 +12,7 @@ const Dashboard = () => {
           <Card />
           <Card />
           <Card />
+          <Card />
         </div>
         <div className='flex flex-row'>
           <div className='basis-3/4'>
