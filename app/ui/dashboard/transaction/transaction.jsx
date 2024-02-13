@@ -1,45 +1,90 @@
-import React from 'react'
+import { useMemo } from 'react'
+import { MantineReactTable, useMantineReactTable } from 'mantine-react-table'
+
+const data = [
+  {
+    name: {
+      firstName: 'Zachary',
+      lastName: 'Davis',
+    },
+    address: '261 Battle Ford',
+    city: 'Columbus',
+    state: 'Ohio',
+  },
+  {
+    name: {
+      firstName: 'Robert',
+      lastName: 'Smith',
+    },
+    address: '566 Brakus Inlet',
+    city: 'Westerville',
+    state: 'West Virginia',
+  },
+  {
+    name: {
+      firstName: 'Kevin',
+      lastName: 'Yan',
+    },
+    address: '7777 Kuhic Knoll',
+    city: 'South Linda',
+    state: 'West Virginia',
+  },
+  {
+    name: {
+      firstName: 'John',
+      lastName: 'Upton',
+    },
+    address: '722 Emie Stream',
+    city: 'Huntington',
+    state: 'Washington',
+  },
+  {
+    name: {
+      firstName: 'Nathan',
+      lastName: 'Harris',
+    },
+    address: '1 Kuhic Knoll',
+    city: 'Ohiowa',
+    state: 'Nebraska',
+  },
+]
 
 const Transaction = () => {
+  const columns = useMemo(
+    () => [
+      {
+        accessorKey: 'name.firstName',
+        header: 'First Name',
+      },
+      {
+        accessorKey: 'name.lastName',
+        header: 'Last Name',
+      },
+      {
+        accessorKey: 'address',
+        header: 'Address',
+      },
+      {
+        accessorKey: 'city',
+        header: 'City',
+      },
+      {
+        accessorKey: 'state',
+        header: 'State',
+      },
+    ],
+    []
+  )
+
+  const table = useMantineReactTable({
+    columns,
+    data,
+  })
+
   return (
     <div className='bg-slate-900 p-5 rounded-lg'>
       <h2 className='mb-5 font-light text-xl text-slate-400'>Latest Transactions</h2>
-      <table className='w-full'>
-        <thead>
-          <tr>
-            <td className='p-2.5'>Name</td>
-            <td className='p-2.5'>Status</td>
-            <td className='p-2.5'>Date</td>
-            <td className='p-2.5'>Amount</td>
-          </tr>
-        </thead>
-        <tbody className='text-slate-600'>
-          <tr>
-            <td className='p-2.5'>John Doe</td>
-            <td className='p-2.5 text-green-700'>Paid</td>
-            <td className='p-2.5'>12.02.2024</td>
-            <td className='p-2.5'>Ksh. 2,000</td>
-          </tr>
-          <tr>
-            <td className='p-2.5'>Jane Doe</td>
-            <td className='p-2.5 text-red-700'>Unpaid</td>
-            <td className='p-2.5'>12.02.2024</td>
-            <td className='p-2.5'>Ksh. 2,000</td>
-          </tr>
-          <tr>
-            <td className='p-2.5'>Joni Doe</td>
-            <td className='p-2.5 text-green-700'>Paid</td>
-            <td className='p-2.5'>12.02.2024</td>
-            <td className='p-2.5'>Ksh. 2,000</td>
-          </tr>
-          <tr>
-            <td className='p-2.5'>Jose Doe</td>
-            <td className='p-2.5 text-red-700'>Unpaid</td>
-            <td className='p-2.5'>12.02.2024</td>
-            <td className='p-2.5'>Ksh. 2,000</td>
-          </tr>
-        </tbody>
-      </table>
+      <MantineReactTable table={table} />;
     </div>
   )
 }
