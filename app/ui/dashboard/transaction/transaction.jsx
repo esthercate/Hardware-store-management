@@ -1,7 +1,8 @@
 'use client'
 
 import { useMemo } from 'react'
-import { MantineReactTable, useMantineReactTable } from 'mantine-react-table'
+import { MantineReactTable } from 'mantine-react-table'
+import { MantineProvider, useMantineTheme } from '@mantine/core'
 
 const data = [
   {
@@ -37,6 +38,7 @@ const data = [
 ]
 
 const Transaction = () => {
+  const globalTheme = useMantineTheme()
   const columns = useMemo(
     () => [
       {
@@ -62,7 +64,19 @@ const Transaction = () => {
   return (
     <div className='bg-slate-900 p-5 rounded-lg'>
       <h2 className='mb-5 font-light text-xl text-slate-400'>Latest Transactions</h2>
-      <MantineReactTable columns={columns} data={data} />
+      <MantineProvider
+        theme={{
+          primaryColor: 'green',
+          primaryShade: 8,
+        }}>
+        <MantineReactTable
+          columns={columns}
+          data={data}
+          mantineTableProps={{
+            striped: true,
+          }}
+        />
+      </MantineProvider>
     </div>
   )
 }
