@@ -73,6 +73,7 @@ const Transaction = () => {
         <MantineReactTable
           columns={columns}
           data={data}
+          color='ocean-blue'
           mantinePaperProps={{
             shadow: 'none',
             sx: {
