@@ -13,7 +13,7 @@ const Transaction = () => {
             <td className='p-2.5'>Amount</td>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='text-slate-600'>
           <tr>
             <td className='p-2.5'>John Doe</td>
             <td className='p-2.5 text-green-700'>Paid</td>
