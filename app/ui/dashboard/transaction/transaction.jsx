@@ -66,12 +66,20 @@ const Transaction = () => {
       <h2 className='mb-5 font-light text-xl text-slate-400'>Latest Transactions</h2>
       <MantineProvider
         theme={{
-          primaryColor: 'green',
+          primaryColor: 'teal',
           primaryShade: 8,
+          colorScheme: 'dark',
         }}>
         <MantineReactTable
           columns={columns}
           data={data}
+          mantinePaperProps={{
+            shadow: 'none',
+            sx: {
+              borderRadius: '5px',
+              border: '1px dashed #e0e0e0',
+            },
+          }}
           mantineTableProps={{
             striped: true,
           }}
