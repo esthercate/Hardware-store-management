@@ -2,6 +2,7 @@
 
 import React, { PureComponent } from 'react'
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+// !TODO: Add lines for totalamt, and 3 highest sold products
 
 const data = [
   {
@@ -17,6 +18,7 @@ const data = [
   {
     name: 'Wed',
     totalAmt: 2290,
+    prod1: 1500,
   },
   {
     name: 'Thur',
@@ -60,7 +62,7 @@ const Chart = () => {
           <Tooltip contentStyle={{ background: '#020617', border: 'none', borderRadius: '10px' }} />
           <Legend />
           <Line type='monotone' dataKey='totalAmt' stroke='#16a34a' activeDot={{ r: 8 }} strokeDasharray='5 5' />
-          <Line type='monotone' dataKey='prod1' stroke='#84cc16' activeDot={{ r: 8 }} strokeDasharray='5 5' />
+          <Line type='monotone' dataKey='prod1' stroke='#6d28d9' activeDot={{ r: 8 }} strokeDasharray='5 5' />
         </LineChart>
       </ResponsiveContainer>
     </div>
