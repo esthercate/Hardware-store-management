@@ -1,36 +1,42 @@
 "use client"
 
 import React, { PureComponent } from 'react'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
 const data = [
   {
     name: 'Mon',
-    amt: 2400,
+    totalAmt: 2400,
+    prod1: 2000,
   },
   {
     name: 'Tue',
-    amt: 2210,
+    totalAmt: 2210,
+    prod1: 2500,
   },
   {
     name: 'Wed',
-    amt: 2290,
+    totalAmt: 2290,
   },
   {
     name: 'Thur',
-    amt: 2000,
+    totalAmt: 2000,
+    prod1: 1000,
   },
   {
     name: 'Fri',
-    amt: 2181,
+    totalAmt: 2181,
+    prod1: 3100,
   },
   {
     name: 'Sat',
-    amt: 2500,
+    totalAmt: 8000,
+    prod1: 5000,
   },
   {
     name: 'Sun',
-    amt: 2100,
+    totalAmt: 2100,
+    prod1: 3400,
   },
 ]
 
@@ -38,7 +44,7 @@ const Chart = () => {
   return (
     <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
       <h2 className='mb-5 font-light text-xl text-slate-400'>Sales Statistics</h2>
-      <ResponsiveContainer width='100%' height='100%'>
+      <ResponsiveContainer width='100%' height='90%'>
         <LineChart
           width={500}
           height={300}
@@ -49,12 +55,12 @@ const Chart = () => {
             left: 20,
             bottom: 5,
           }}>
-          <CartesianGrid strokeDasharray='3 3' />
           <XAxis dataKey='name' />
           <YAxis />
-          <Tooltip />
+          <Tooltip contentStyle={{ background: '#020617', border: 'none', borderRadius: '10px' }} />
           <Legend />
-          <Line type='monotone' dataKey='amt' stroke='#16a34a' activeDot={{ r: 8 }} />
+          <Line type='monotone' dataKey='totalAmt' stroke='#16a34a' activeDot={{ r: 8 }} strokeDasharray='5 5' />
+          <Line type='monotone' dataKey='prod1' stroke='#84cc16' activeDot={{ r: 8 }} strokeDasharray='5 5' />
         </LineChart>
       </ResponsiveContainer>
     </div>
