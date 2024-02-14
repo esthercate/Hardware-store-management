@@ -1,11 +1,11 @@
 import "./ui/globals.css";
-import { Josefin_Sans} from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const josefin_sans = Josefin_Sans({
-  weight: ['100', '300', '500', '700'],
-  style: ['normal', 'italic'],
+const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 })
 
 export const metadata = {
@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className={josefin_sans.className}>
+    <html lang='en' className={poppins.className}>
       <body>{children}</body>
     </html>
   )

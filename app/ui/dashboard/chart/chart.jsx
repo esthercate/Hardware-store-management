@@ -36,8 +36,8 @@ const data = [
 
 const Chart = () => {
   return (
-    <div className='h-[450px]'>
-      <h2>Sales Statistics</h2>
+    <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
+      <h2 className='mb-5 font-light text-xl text-slate-400'>Sales Statistics</h2>
       <ResponsiveContainer width='100%' height='100%'>
         <LineChart
           width={500}
@@ -54,7 +54,7 @@ const Chart = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type='monotone' dataKey='amt' stroke='#82ca9d' activeDot={{ r: 8 }} />
+          <Line type='monotone' dataKey='amt' stroke='#16a34a' activeDot={{ r: 8 }} />
         </LineChart>
       </ResponsiveContainer>
     </div>
