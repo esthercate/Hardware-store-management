@@ -2,7 +2,9 @@ import React from 'react'
 
 const RightBar = () => {
   return (
-    <div>Display stock that is almost over</div>
+    <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
+      <h2 className='mb-5 font-light text-xl text-slate-400'>Restock Alert</h2>
+    </div>
   )
 }
 

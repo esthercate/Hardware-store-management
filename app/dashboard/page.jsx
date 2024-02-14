@@ -13,7 +13,7 @@ const Dashboard = () => {
           <Card />
           <Card />
         </div>
-        <div className='flex flex-row'>
+        <div className='flex flex-row gap-5'>
           <div className='basis-3/4'>
             <Chart />
           </div>
