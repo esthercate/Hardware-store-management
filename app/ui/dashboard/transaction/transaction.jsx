@@ -66,25 +66,13 @@ const Transaction = () => {
       <h2 className='mb-5 font-light text-xl text-slate-400'>Latest Transactions</h2>
       <MantineProvider
         theme={{
-          primaryColor: 'teal',
-          primaryShade: 8,
           colorScheme: 'dark',
+          colors: {
+            // override dark colors to change them for all components
+            dark: ['#cbd5e1', '#d1d5db', '#9ca3af', '#6b7280', '#4b5563', '#374151', '#1f2937', '#0f172a', '#030712', '#01010a'],
+          },
         }}>
-        <MantineReactTable
-          columns={columns}
-          data={data}
-          color='ocean-blue'
-          mantinePaperProps={{
-            shadow: 'none',
-            sx: {
-              borderRadius: '5px',
-              border: '1px dashed #e0e0e0',
-            },
-          }}
-          mantineTableProps={{
-            striped: true,
-          }}
-        />
+        <MantineReactTable columns={columns} data={data} />
       </MantineProvider>
     </div>
   )
