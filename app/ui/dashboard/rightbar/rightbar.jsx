@@ -1,5 +1,44 @@
 import React from 'react'
 import { MdWarning } from 'react-icons/md'
+import AlertCard from './alertCard/alertCard'
+
+const restockData = [
+  {
+    product_name: 'Cement',
+    Remaining: 3,
+    unit: 'bags',
+  },
+  {
+    product_name: 'Cement',
+    Remaining: 3,
+    unit: 'bags',
+  },
+  {
+    product_name: 'Cement',
+    Remaining: 3,
+    unit: 'bags',
+  },
+  {
+    product_name: 'Cement',
+    Remaining: 3,
+    unit: 'bags',
+  },
+  {
+    product_name: 'Cement',
+    Remaining: 3,
+    unit: 'bags',
+  },
+  {
+    product_name: 'Cement',
+    Remaining: 3,
+    unit: 'bags',
+  },
+  {
+    product_name: 'Cement',
+    Remaining: 3,
+    unit: 'bags',
+  },
+]
 
 const RightBar = () => {
   return (
@@ -12,27 +51,7 @@ const RightBar = () => {
       </div>
       <div>
         <ul>
-          <li className='flex justify-between p-2 rounded-md my-3'>
-            Cement <span>3 bags</span>
-          </li>
-          <li className='flex justify-between p-2 rounded-md my-3'>
-            Cement <span>3 bags</span>
-          </li>
-          <li className='flex justify-between p-2 rounded-md my-3'>
-            Cement <span>3 bags</span>
-          </li>
-          <li className='flex justify-between p-2 rounded-md my-3'>
-            Cement <span>3 bags</span>
-          </li>
-          <li className='flex justify-between p-2 rounded-md my-3'>
-            Cement <span>3 bags</span>
-          </li>
-          <li className='flex justify-between p-2 rounded-md my-3'>
-            Cement <span>3 bags</span>
-          </li>
-          <li className='flex justify-between p-2 rounded-md my-3'>
-            Cement <span>3 bags</span>
-          </li>
+          <AlertCard />
         </ul>
       </div>
     </div>
