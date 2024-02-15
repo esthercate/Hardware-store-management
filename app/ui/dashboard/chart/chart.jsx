@@ -46,7 +46,7 @@ const Chart = () => {
   return (
     <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
       <h2 className='mb-5 font-light text-xl text-slate-400'>Sales Statistics</h2>
-      <ResponsiveContainer width='100%' height='90%' className={'text-white'}>
+      <ResponsiveContainer width='100%' height='90%'>
         <LineChart
           width={500}
           height={300}
@@ -57,8 +57,8 @@ const Chart = () => {
             left: 20,
             bottom: 5,
           }}>
-          <XAxis dataKey='name' />
-          <YAxis />
+          <XAxis dataKey='name' stroke='#cbd5e1' />
+          <YAxis stroke='#cbd5e1' />
           <Tooltip contentStyle={{ background: '#020617', border: 'none', borderRadius: '10px' }} />
           <Legend />
           <Line type='monotone' dataKey='totalAmt' stroke='#16a34a' activeDot={{ r: 8 }} strokeDasharray='5 5' />
