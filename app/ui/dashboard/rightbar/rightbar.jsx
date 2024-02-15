@@ -7,40 +7,47 @@ const restockData = [
     product_name: 'Cement',
     Remaining: 3,
     unit: 'bags',
+    details: '',
   },
   {
-    product_name: 'Cement',
-    Remaining: 3,
-    unit: 'bags',
+    product_name: 'Nails',
+    Remaining: 2,
+    unit: 'kgs',
+    details: '3 inches',
   },
   {
-    product_name: 'Cement',
-    Remaining: 3,
-    unit: 'bags',
+    product_name: 'bulbs',
+    Remaining: 5,
+    unit: '',
+    details: 'Energy saving',
   },
   {
-    product_name: 'Cement',
-    Remaining: 3,
-    unit: 'bags',
+    product_name: 'Wheelbarrow',
+    Remaining: 1,
+    unit: '',
+    details: '',
   },
   {
-    product_name: 'Cement',
-    Remaining: 3,
-    unit: 'bags',
+    product_name: 'Matress',
+    Remaining: 1,
+    unit: '',
+    details: '',
   },
   {
-    product_name: 'Cement',
-    Remaining: 3,
-    unit: 'bags',
+    product_name: 'Socket',
+    Remaining: 6,
+    unit: '',
+    details: '',
   },
   {
-    product_name: 'Cement',
+    product_name: 'Spade',
     Remaining: 3,
-    unit: 'bags',
+    unit: '',
+    details: '',
   },
 ]
 
-const RightBar = () => {
+const RightBar = ({restockData}) => {
   return (
     <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
       <div className='flex gap-3'>
@@ -50,9 +57,7 @@ const RightBar = () => {
         <MdWarning size={22} color='red' />
       </div>
       <div>
-        <ul>
-          <AlertCard />
-        </ul>
+        <AlertCard restockData={restockData} />
       </div>
     </div>
   )
