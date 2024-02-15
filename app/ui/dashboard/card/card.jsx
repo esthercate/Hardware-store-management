@@ -3,7 +3,7 @@ import { PiChartLineUpLight, PiChartLineDownLight } from 'react-icons/pi'
 
 const Card = () => {
   return (
-    <div className='flex flex-1 justify-between bg-slate-900 p-5 rounded-lg gap-5 cursor-pointer hover:bg-slate-800'>
+    <div className='flex flex-1 justify-between p-5 rounded-lg gap-5 cursor-pointer shadow-lg bg-gradient-to-r from-violet-500 to-fuchsia-500'>
       <div className='texts flex flex-col gap-5'>
         <span className='text-lg'>Daily sales</span>
         <span className='text-xl font-medium'>Ksh. 24,000</span>
