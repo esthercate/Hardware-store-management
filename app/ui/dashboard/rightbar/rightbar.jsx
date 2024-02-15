@@ -47,7 +47,7 @@ const restockData = [
   },
 ]
 
-const RightBar = ({restockData}) => {
+const RightBar = () => {
   return (
     <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
       <div className='flex gap-3'>
