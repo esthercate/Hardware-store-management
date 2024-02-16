@@ -40,8 +40,14 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className='sticky top-10'>
-      <div className='flex justify-center'>
-        <Image src='/hw-logo.png' alt='Logo' width='150' height='150' />
+      <div className='flex'>
+        <div>
+          <Image className='rounded-full' src='/profile.png' alt='avater' width='50' height='30' />
+          <div>
+            <h1>Charles v.</h1>
+            <span>CEO</span>
+          </div>
+        </div>
       </div>
       <ul className='list-none'>
         {menuItems.map((menuItem, index) => (
