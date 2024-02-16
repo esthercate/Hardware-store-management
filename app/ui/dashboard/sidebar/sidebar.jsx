@@ -50,7 +50,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div>
-          <BsBookmarkCheckFill size={20} fill='#22c55e' />
+          <BsBookmarkCheckFill size={24} fill='#22c55e' />
         </div>
       </div>
       <ul className='list-none'>
