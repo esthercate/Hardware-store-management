@@ -1,5 +1,6 @@
 import React from 'react'
 import { PiChartLineUpBold, PiChartLineDownBold } from 'react-icons/pi'
+import {addCommasToNumber} from '../../../lib/helpers'
 
 const Card = ({ cardData }) => {
   return (
@@ -18,7 +19,7 @@ const Card = ({ cardData }) => {
           }`}>
           <div className='texts flex flex-col gap-5'>
             <span className='text-lg'>{data.title}</span>
-            <span className='text-xl font-medium'>{data.amount}</span>
+            <span className='text-xl font-medium'>Ksh. {addCommasToNumber(data.amount)}</span>
             <span className='font-light text-base'>Increased by {data.change}</span>
           </div>
           <div>
