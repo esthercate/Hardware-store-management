@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdDashboardCustomize, MdHardware, MdAnalytics, MdLogout } from 'react-icons/md'
 import { FaFileInvoiceDollar } from 'react-icons/fa'
+import { BsBookmarkCheckFill } from 'react-icons/bs'
 import { TbReport } from 'react-icons/tb'
 import MenuLink from '../sidebar/menulink/menulink'
 import Image from 'next/image'
@@ -40,13 +41,16 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className='sticky top-10'>
-      <div className='flex'>
-        <div>
-          <Image className='rounded-full' src='/profile.png' alt='avater' width='50' height='30' />
+      <div className='flex items-center justify-between'>
+        <div className='flex items-center gap-5'>
+          <Image className='rounded-full' src='/profile.png' alt='avater' width='60' height='60' />
           <div>
-            <h1>Charles v.</h1>
-            <span>CEO</span>
+            <h1 className='font-medium text-lg'>Charles v.</h1>
+            <span className='font-light text-md text-slate-400'>CEO</span>
           </div>
+        </div>
+        <div>
+          <BsBookmarkCheckFill size={20} fill='#22c55e' />
         </div>
       </div>
       <ul className='list-none'>
@@ -54,7 +58,7 @@ const Sidebar = () => {
           <MenuLink items={menuItem.list} key={index} />
         ))}
       </ul>
-      <button className='flex py-7 px-4 items-center w-full gap-4 my-5 rounded-lg hover:text-fuchsia-600 bg-transparent hover:bg-slate-800'>
+      <button className='flex py-7 px-4 items-center w-full gap-4 my-5 rounded-lg hover:text-green-600 bg-transparent hover:bg-slate-800'>
         <MdLogout /> Logout
       </button>
     </div>
