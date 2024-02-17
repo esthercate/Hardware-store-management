@@ -63,7 +63,7 @@ const Transaction = () => {
 
   return (
     <div className='bg-slate-900 p-5 rounded-lg'>
-      <h2 className='mb-5 font-light text-xl text-slate-400'>Latest Transactions</h2>
+      <h2 className='mb-8 font-light text-xl text-slate-400'>Latest Transactions</h2>
       <MantineProvider
         theme={{
           colorScheme: 'dark',

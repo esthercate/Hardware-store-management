@@ -1,11 +1,10 @@
 import "./ui/globals.css";
-import { Poppins } from 'next/font/google'
+import { Roboto_Mono } from 'next/font/google'
 
-const poppins = Poppins({
+const roboto_mono = Roboto_Mono({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  weight: ['100', '200', '300', '400', '500', '600', '700',],
 })
 
 export const metadata = {
@@ -15,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className={poppins.className}>
+    <html lang='en' className={roboto_mono.className}>
       <body>{children}</body>
     </html>
   )

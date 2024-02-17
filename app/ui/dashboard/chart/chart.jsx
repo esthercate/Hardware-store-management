@@ -45,7 +45,7 @@ const data = [
 const Chart = () => {
   return (
     <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
-      <h2 className='mb-5 font-light text-xl text-slate-400'>Sales Statistics</h2>
+      <h2 className='mb-8 font-light text-xl text-slate-400'>Sales Statistics</h2>
       <ResponsiveContainer width='100%' height='90%'>
         <LineChart
           width={500}
