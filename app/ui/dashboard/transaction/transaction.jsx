@@ -18,7 +18,7 @@ const data = [
     date: '14.02.2024',
   },
   {
-    name: 'Kevin',
+    name: 'Juliet',
     status: 'Paid',
     amount: 2400,
     date: '14.02.2024',
@@ -30,7 +30,7 @@ const data = [
     date: '14.02.2024',
   },
   {
-    name: 'Nathan',
+    name: 'Joyce',
     status: 'Paid',
     amount: 2400,
     date: '14.02.2024',
