@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from '../ui/dashboard/sidebar/sidebar'
 import Navbar from '../ui/dashboard/navbar/navbar'
+import Footer from '../ui/dashboard/footer/footer'
 
 const Layout = ({ children }) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
           <Navbar />
         </div>
         {children}
+        <Footer />
       </div>
     </div>
   )
