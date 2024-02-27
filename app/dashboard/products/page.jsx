@@ -1,8 +1,11 @@
 import React from 'react'
+import Search from '../../ui/dashboard/search/search'
 
 const ProductsPage = () => {
   return (
-    <div className='container'>ProductsPage</div>
+    <div className='container'>
+      <Search />
+    </div>
   )
 }
 
