@@ -5,6 +5,7 @@ import Search from '../../ui/dashboard/search/search'
 import Link from 'next/link'
 import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
+import Pagination from '../../ui/dashboard/pagination/pagination'
 
 const ProductsPage = () => {
   const tableHeadData = ['Title', 'Description', 'Buying Price', 'Selling Price', 'Created At', 'Stock', 'Action']
@@ -50,7 +51,7 @@ const ProductsPage = () => {
           </button>
         </Link>
       </div>
-      <table className='w-full'>
+      <table className='w-full my-5'>
         <thead>
           <tr>
             {tableHeadData.map((header, index) => (
@@ -69,18 +70,18 @@ const ProductsPage = () => {
                 </td>
               ))}
               <td>
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-2.5'>
                   <Link href='/'>
-                    <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white'>
+                    <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
                       View
                     </Badge>
                   </Link>
                   <Link href='/'>
-                    <Badge color='blue' variant='outline' radius='sm' className='hover:bg-blue-600 hover:text-white'>
+                    <Badge color='blue' variant='outline' radius='sm' className='hover:bg-blue-600 hover:text-white p-[5px]'>
                       Update
                     </Badge>
                   </Link>
-                  <Badge color='red' variant='outline' radius='sm' className='cursor-pointer hover:bg-red-600 hover:text-white'>
+                  <Badge color='red' variant='outline' radius='sm' className='cursor-pointer hover:bg-red-600 hover:text-white p-[5px]'>
                     Delete
                   </Badge>
                 </div>
@@ -89,6 +90,7 @@ const ProductsPage = () => {
           ))}
         </tbody>
       </table>
+      <Pagination />
     </div>
   )
 }
