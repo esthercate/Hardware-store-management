@@ -15,6 +15,17 @@ const ProductsPage = () => {
           </button>
         </Link>
       </div>
+      <table>
+        <thead>
+          <td>Title</td>
+          <td>Description</td>
+          <td>Buying Price</td>
+          <td>Selling Price</td>
+          <td>created At</td>
+          <td>Stock</td>
+          <td>Action</td>
+        </thead>
+      </table>
     </div>
   )
 }
