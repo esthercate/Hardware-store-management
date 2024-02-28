@@ -20,7 +20,6 @@ const ProductsPage = () => {
       createdAt: '28.02.2024',
       stock: '32',
     },
-    // Add more products here
     {
       title: 'Steel Bars',
       description: '6mm',
@@ -37,7 +36,30 @@ const ProductsPage = () => {
       createdAt: '26.02.2024',
       stock: '20',
     },
-    // Add more products as needed
+    {
+      title: 'Cement',
+      description: '50kgs',
+      buyingPrice: 'Ksh. 600',
+      sellingPrice: 'Ksh. 750',
+      createdAt: '28.02.2024',
+      stock: '32',
+    },
+    {
+      title: 'Steel Bars',
+      description: '6mm',
+      buyingPrice: 'Ksh. 800',
+      sellingPrice: 'Ksh. 1000',
+      createdAt: '27.02.2024',
+      stock: '100',
+    },
+    {
+      title: 'Paint',
+      description: '5',
+      buyingPrice: 'Ksh. 1000',
+      sellingPrice: 'Ksh. 1200',
+      createdAt: '26.02.2024',
+      stock: '20',
+    },
   ]
 
   return (
