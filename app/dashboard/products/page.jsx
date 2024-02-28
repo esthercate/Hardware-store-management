@@ -1,10 +1,41 @@
 import React from 'react'
 import Search from '../../ui/dashboard/search/search'
 import Link from 'next/link'
-import Image from 'next/image'
 import { MdOutlineAdd } from 'react-icons/md'
 
 const ProductsPage = () => {
+  const tableHeadData = ['Title', 'Description', 'Buying Price', 'Selling Price', 'Created At', 'Stock', 'Action']
+
+  // Array of product data
+  const products = [
+    {
+      title: 'Cement',
+      description: '50kgs',
+      buyingPrice: 'Ksh. 600',
+      sellingPrice: 'Ksh. 750',
+      createdAt: '28.02.2024',
+      stock: '32',
+    },
+    // Add more products here
+    {
+      title: 'Steel Bars',
+      description: '6mm',
+      buyingPrice: 'Ksh. 800',
+      sellingPrice: 'Ksh. 1000',
+      createdAt: '27.02.2024',
+      stock: '100',
+    },
+    {
+      title: 'Paint',
+      description: '5',
+      buyingPrice: 'Ksh. 1000',
+      sellingPrice: 'Ksh. 1200',
+      createdAt: '26.02.2024',
+      stock: '20',
+    },
+    // Add more products as needed
+  ]
+
   return (
     <div className='bg-slate-900 p-5 rounded-lg mt-5'>
       <div className='flex items-center justify-between'>
@@ -16,38 +47,37 @@ const ProductsPage = () => {
           </button>
         </Link>
       </div>
-      <table>
+      <table className='w-full'>
         <thead>
-          <td>Title</td>
-          <td>Description</td>
-          <td>Buying Price</td>
-          <td>Selling Price</td>
-          <td>Created At</td>
-          <td>Stock</td>
-          <td>Action</td>
+          <tr>
+            {tableHeadData.map((header, index) => (
+              <td className='p-2.5' key={index}>{header}</td>
+            ))}
+          </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Cement</td>
-            <td>50kgs bag</td>
-            <td>Ksh. 600</td>
-            <td>Ksh. 750</td>
-            <td>28.02.2024</td>
-            <td>32 bags</td>
-            <td>
-              <div>
-                <Link href={'/'}>
-                  <button>View</button>
-                </Link>
-                <Link href={'/'}>
-                  <button>Delete</button>
-                </Link>
-                <Link href={'/'}>
-                  <button>Update</button>
-                </Link>
-              </div>
-            </td>
-          </tr>
+          {products.map((product, index) => (
+            <tr key={index}>
+              {Object.values(product).map((value, index) => (
+                <td className='p-2.5' key={index}>
+                  {value}
+                </td>
+              ))}
+              <td>
+                <div>
+                  <Link href='/'>
+                    <button>View</button>
+                  </Link>
+                  <Link href='/'>
+                    <button>Delete</button>
+                  </Link>
+                  <Link href='/'>
+                    <button>Update</button>
+                  </Link>
+                </div>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
