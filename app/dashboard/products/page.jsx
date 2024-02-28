@@ -1,6 +1,9 @@
+'use client'
+
 import React from 'react'
 import Search from '../../ui/dashboard/search/search'
 import Link from 'next/link'
+import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 
 const ProductsPage = () => {
@@ -51,7 +54,9 @@ const ProductsPage = () => {
         <thead>
           <tr>
             {tableHeadData.map((header, index) => (
-              <td className='p-2.5' key={index}>{header}</td>
+              <td className='p-2.5' key={index}>
+                {header}
+              </td>
             ))}
           </tr>
         </thead>
@@ -64,16 +69,20 @@ const ProductsPage = () => {
                 </td>
               ))}
               <td>
-                <div>
+                <div className='flex items-center gap-2'>
                   <Link href='/'>
-                    <button>View</button>
+                    <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white'>
+                      View
+                    </Badge>
                   </Link>
                   <Link href='/'>
-                    <button>Delete</button>
+                    <Badge color='blue' variant='outline' radius='sm' className='hover:bg-blue-600 hover:text-white'>
+                      Update
+                    </Badge>
                   </Link>
-                  <Link href='/'>
-                    <button>Update</button>
-                  </Link>
+                  <Badge color='red' variant='outline' radius='sm' className='cursor-pointer hover:bg-red-600 hover:text-white'>
+                    Delete
+                  </Badge>
                 </div>
               </td>
             </tr>
