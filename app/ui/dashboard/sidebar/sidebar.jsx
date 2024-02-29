@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdDashboardCustomize, MdHardware, MdAnalytics, MdLogout } from 'react-icons/md'
-import { FaFileInvoiceDollar } from 'react-icons/fa'
+import { FaFileInvoiceDollar, FaUsers } from 'react-icons/fa'
 import { BsBookmarkCheckFill } from 'react-icons/bs'
 import { TbReport } from 'react-icons/tb'
 import MenuLink from '../sidebar/menulink/menulink'
@@ -37,7 +37,7 @@ const menuItems = [
       {
         title: 'Users',
         path: '/dashboard/users',
-        icon: <TbReport />,
+        icon: <FaUsers />,
       },
     ],
   },
