@@ -40,7 +40,7 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <div className='sticky top-10'>
+    <div className='sticky top-10 min-h-screen'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-5'>
           <Image className='rounded-full' src='/profile.png' alt='avater' width='60' height='60' />
