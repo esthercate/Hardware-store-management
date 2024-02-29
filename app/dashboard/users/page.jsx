@@ -8,7 +8,7 @@ import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
 
 const UsersPage = () => {
-  const tableHeadData = ['Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
+  const tableHeadData = ['', 'Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
 
   // Array of users data
   const users = [
@@ -18,6 +18,7 @@ const UsersPage = () => {
       dateCreated: '29.02.2024',
       role: 'CEO',
       status: 'Active',
+      avatar: '/user.png',
     },
     {
       name: 'Robert',
@@ -25,6 +26,7 @@ const UsersPage = () => {
       dateCreated: '29.02.2024',
       role: 'Manager',
       status: 'Active',
+      avatar: '/user.png',
     },
     {
       name: 'Sammy',
@@ -32,6 +34,7 @@ const UsersPage = () => {
       dateCreated: '29.02.2024',
       role: 'Manager',
       status: 'Inactive',
+      avatar: '/user.png',
     },
   ]
   return (
@@ -58,20 +61,23 @@ const UsersPage = () => {
         <tbody>
           {users.map((user, index) => (
             <tr key={index}>
-              {Object.values(user).map((value, index) => (
-                <td className='p-2.5' key={index}>
-                  {value}
-                </td>
-              ))}
+              {/* Render Avatar */}
+              <td className='p-2.5'>
+                <img src={user.avatar} alt={user.name} className='w-8 h-8 rounded-full' />
+              </td>
+              {/* Render Other User Data */}
+              {Object.values(user)
+                .slice(0, -1)
+                .map((value, index) => (
+                  <td className='p-2.5' key={index}>
+                    {value}
+                  </td>
+                ))}
+              {/* Render Action Buttons */}
               <td>
                 <div className='flex items-center gap-2.5'>
                   <Link href='/'>
                     <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
-                      View
-                    </Badge>
-                  </Link>
-                  <Link href='/'>
-                    <Badge color='blue' variant='outline' radius='sm' className='hover:bg-blue-600 hover:text-white p-[5px]'>
                       Update
                     </Badge>
                   </Link>
