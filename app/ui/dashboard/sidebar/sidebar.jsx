@@ -34,6 +34,11 @@ const menuItems = [
         path: '/dashboard/reports',
         icon: <TbReport />,
       },
+      {
+        title: 'Users',
+        path: '/dashboard/users',
+        icon: <TbReport />,
+      },
     ],
   },
 ]
