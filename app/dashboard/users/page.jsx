@@ -8,24 +8,27 @@ import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
 
 const UsersPage = () => {
-  const tableHeadData = ['Name', 'Date Created', 'Role', 'Status', 'Action']
+  const tableHeadData = ['Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
 
   // Array of users data
   const users = [
     {
       name: 'Charles',
+      phoneNo: '0700000000',
       dateCreated: '29.02.2024',
       role: 'CEO',
       status: 'Active',
     },
     {
       name: 'Robert',
+      phoneNo: '0700000000',
       dateCreated: '29.02.2024',
       role: 'Manager',
       status: 'Active',
     },
     {
       name: 'Sammy',
+      phoneNo: '0700000000',
       dateCreated: '29.02.2024',
       role: 'Manager',
       status: 'Inactive',
