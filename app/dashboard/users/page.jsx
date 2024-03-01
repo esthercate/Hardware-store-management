@@ -14,7 +14,7 @@ const UsersPage = () => {
   const users = [
     {
       name: 'Charles',
-      phoneNo: '0700000000',
+      phoneNo: '0740000000',
       dateCreated: '29.02.2024',
       role: 'CEO',
       status: 'Active',
@@ -22,7 +22,7 @@ const UsersPage = () => {
     },
     {
       name: 'Robert',
-      phoneNo: '0700000000',
+      phoneNo: '07010000000',
       dateCreated: '29.02.2024',
       role: 'Manager',
       status: 'Active',
@@ -30,7 +30,7 @@ const UsersPage = () => {
     },
     {
       name: 'Sammy',
-      phoneNo: '0700000000',
+      phoneNo: '0720000000',
       dateCreated: '29.02.2024',
       role: 'Manager',
       status: 'Inactive',
