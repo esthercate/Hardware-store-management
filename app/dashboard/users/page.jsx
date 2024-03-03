@@ -10,7 +10,6 @@ import Pagination from '../../ui/dashboard/pagination/pagination'
 const UsersPage = () => {
   const tableHeadData = ['', 'Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
 
-  // Array of users data
   const users = [
     {
       name: 'Charles',
@@ -61,11 +60,9 @@ const UsersPage = () => {
         <tbody>
           {users.map((user, index) => (
             <tr key={index}>
-              {/* Render Avatar */}
               <td className='p-2.5'>
                 <img src={user.avatar} alt={user.name} className='w-8 h-8 rounded-full' />
               </td>
-              {/* Render Other User Data */}
               {Object.values(user)
                 .slice(0, -1)
                 .map((value, index) => (
@@ -73,7 +70,6 @@ const UsersPage = () => {
                     {value}
                   </td>
                 ))}
-              {/* Render Action Buttons */}
               <td>
                 <div className='flex items-center gap-2.5'>
                   <Link href='/'>
