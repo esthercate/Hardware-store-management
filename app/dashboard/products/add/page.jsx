@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AddProductPage = () => {
-  return <div>AddProductPage</div>
+  return <div>Add Product Page form</div>
 }
 
 export default AddProductPage
