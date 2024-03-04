@@ -35,6 +35,14 @@ const UsersPage = () => {
       status: 'Inactive',
       avatar: '/user.png',
     },
+    {
+      name: 'Cate',
+      phoneNo: '0730000000',
+      dateCreated: '29.02.2024',
+      role: 'Manager',
+      status: 'Inactive',
+      avatar: '/user.png',
+    },
   ]
   return (
     <div className='bg-slate-900 p-5 rounded-lg mt-5'>
