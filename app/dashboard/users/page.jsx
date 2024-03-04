@@ -3,6 +3,7 @@
 import React from 'react'
 import Search from '../../ui/dashboard/search/search'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
@@ -69,7 +70,7 @@ const UsersPage = () => {
           {users.map((user, index) => (
             <tr key={index}>
               <td className='p-2.5'>
-                <img src={user.avatar} alt={user.name} className='w-8 h-8 rounded-full' />
+                <Image src={user.avatar} alt={user.name} width={32} height={32} className='rounded-full' />
               </td>
               {Object.values(user)
                 .slice(0, -1)
