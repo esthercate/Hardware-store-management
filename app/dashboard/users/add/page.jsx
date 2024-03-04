@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AddUserPage = () => {
-  return <div>AddUserPage</div>
+  return <div>Add User Page form</div>
 }
 
 export default AddUserPage
