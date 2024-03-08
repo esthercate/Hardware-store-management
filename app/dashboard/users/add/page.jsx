@@ -27,6 +27,9 @@ const AddUserPage = () => {
             <option value='action'>Action</option>
           </select>
         </div>
+        <button className='w-full p-5 bg-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white border-0' type='submit'>
+          Submit
+        </button>
       </form>
     </div>
   )
