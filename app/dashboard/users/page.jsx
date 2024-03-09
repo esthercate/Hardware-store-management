@@ -83,7 +83,7 @@ const UsersPage = () => {
                 <div className='flex items-center gap-2.5'>
                   <Link href='/'>
                     <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
-                      Update
+                      View
                     </Badge>
                   </Link>
                   <Badge color='red' variant='outline' radius='sm' className='cursor-pointer hover:bg-red-600 hover:text-white p-[5px]'>
