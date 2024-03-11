@@ -10,6 +10,7 @@ const SingleUserPage = () => {
       <div className='flex flex-col'>
         <h3>Username</h3>
         <p>Phone Number</p>
+        <p>Email</p>
 
       </div>
     </div>
