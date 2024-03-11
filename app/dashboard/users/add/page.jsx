@@ -14,7 +14,7 @@ const AddUserPage = () => {
         </div>
         <div className='flex justify-between gap-5 mb-4'>
           <select name='role' id='role' className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700'>
-            <option value={false} selected>Ia Admin?</option>
+            <option value={false} selected>Is Admin?</option>
             <option value={true}>Yes</option>
             <option value={false}>No</option>
           </select>
