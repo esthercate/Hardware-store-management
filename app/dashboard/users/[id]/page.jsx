@@ -13,6 +13,7 @@ const SingleUserPage = () => {
         <p>Email</p>
         <p>Password</p>
         <p>Role</p>
+        <p>Status</p>
       </div>
     </div>
   )
