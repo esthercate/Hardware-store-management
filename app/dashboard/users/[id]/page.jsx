@@ -12,6 +12,7 @@ const SingleUserPage = () => {
         <p>Phone Number</p>
         <p>Email</p>
         <p>Password</p>
+        <p>Role</p>
       </div>
     </div>
   )
