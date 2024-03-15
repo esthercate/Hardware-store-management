@@ -22,7 +22,7 @@ const AddProductPage = () => {
           <input className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700' type='number' placeholder='Stock' name='stock' required />
           <input className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700' type='text' placeholder='Size' name='size' required />
         </div>
-        <textarea className='p-5 w-full bg-transparent rounded mb-3 border-2 border-slate-700' name='description' id='description' rows='8' placeholder='Description'></textarea>
+        <textarea className='p-5 w-full bg-transparent rounded-md mb-3 border-2 border-slate-700' name='description' id='description' rows='8' placeholder='Description'></textarea>
         <button className='w-full p-5 bg-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white border-0' type='submit'>
           Submit
         </button>
