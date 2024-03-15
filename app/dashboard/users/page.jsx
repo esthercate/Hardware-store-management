@@ -81,7 +81,7 @@ const UsersPage = () => {
                 ))}
               <td>
                 <div className='flex items-center gap-2.5'>
-                  <Link href='/'>
+                  <Link href='/dashboard/users/test'>
                     <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
                       View
                     </Badge>

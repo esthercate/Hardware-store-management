@@ -93,7 +93,7 @@ const ProductsPage = () => {
               ))}
               <td>
                 <div className='flex items-center gap-2.5'>
-                  <Link href='/'>
+                  <Link href='/dashboard/products/test'>
                     <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
                       View
                     </Badge>
