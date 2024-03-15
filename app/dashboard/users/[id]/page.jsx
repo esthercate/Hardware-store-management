@@ -3,11 +3,12 @@ import Image from 'next/image'
 
 const SingleUserPage = () => {
   return (
-    <div className='flex'>
-      <div>
-        <Image className='rounded-md' src='/profile.png' alt='profile picture' width='150' height='150' />
+    <div className='flex gap-12 mt-5'>
+      <div className='flex flex-col gap-3 bg-slate-900 p-5 rounded-lg font-bold'>
+        <Image className='flex-1 rounded-lg' src='/profile.png' alt='profile picture' width='300' height='300' />
+        <p>Charles V</p>
       </div>
-      <div className='flex flex-col gap-3'>
+      <div className='flex-3 bg-slate-900 p-5 rounded-lg'>
         <label>Username</label>
         <input type='text' name='username' placeholder='Charles v' />
         <label>Phone Number</label>
