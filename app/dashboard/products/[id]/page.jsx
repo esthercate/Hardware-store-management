@@ -14,7 +14,7 @@ const SingerProductPage = () => {
           <input className='p-5 my-2.5 w-full bg-transparent rounded-md border-2 border-slate-700' type='text' name='title' placeholder='Product Name' />
           <label>Category</label>
           <select name='cat' id='cat' className='p-5 my-2.5 w-full bg-transparent rounded-md border-2 border-slate-700'>
-            <option value='general'>Choose a Category</option>
+            <option value='general'>Category 2</option>
             <option value='category1'>Category 1</option>
             <option value='category2'>Category 2</option>
             <option value='category3'>Category 3</option>
