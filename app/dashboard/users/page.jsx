@@ -1,50 +1,18 @@
-'use client'
-
 import React from 'react'
 import Search from '../../ui/dashboard/search/search'
 import Link from 'next/link'
 import Image from 'next/image'
+import { fetchUsers } from '../../lib/data'
 import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
 
-const UsersPage = () => {
+const UsersPage = async () => {
   const tableHeadData = ['', 'Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
 
-  const users = [
-    {
-      name: 'Charles',
-      phoneNo: '0740000000',
-      dateCreated: '29.02.2024',
-      role: 'CEO',
-      status: 'Active',
-      avatar: '/user.png',
-    },
-    {
-      name: 'Robert',
-      phoneNo: '07010000000',
-      dateCreated: '29.02.2024',
-      role: 'Manager',
-      status: 'Active',
-      avatar: '/user.png',
-    },
-    {
-      name: 'Sammy',
-      phoneNo: '0720000000',
-      dateCreated: '29.02.2024',
-      role: 'Manager',
-      status: 'Inactive',
-      avatar: '/user.png',
-    },
-    {
-      name: 'Cate',
-      phoneNo: '0730000000',
-      dateCreated: '29.02.2024',
-      role: 'Manager',
-      status: 'Inactive',
-      avatar: '/user.png',
-    },
-  ]
+  const users = await fetchUsers()
+  console.log(users)
+
   return (
     <div className='bg-slate-900 p-5 rounded-lg mt-5'>
       <div className='flex items-center justify-between'>
@@ -81,7 +49,7 @@ const UsersPage = () => {
                 ))}
               <td>
                 <div className='flex items-center gap-2.5'>
-                  <Link href='/dashboard/users/test'>
+                  <Link href='/dashboard/users/test' className='hover:bg-green-600 hover:text-white p-[5px]'>
                     <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
                       View
                     </Badge>

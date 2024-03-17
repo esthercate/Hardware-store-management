@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Login = () => {
   return (
@@ -10,6 +11,13 @@ const Login = () => {
         <button className='p-5 bg-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white border-0 font-bold' type='submit'>
           Login
         </button>
+        <div className='flex justify-between text-xs'>
+          <div className='flex gap-2'>
+            <input type='checkbox' id='loggedin' name='loggedin' value='loggedin' />
+            <label>Keep me logged in</label>
+          </div>
+          <Link className='underline' href='/'>Forgot password?</Link>
+        </div>
       </form>
     </div>
   )
