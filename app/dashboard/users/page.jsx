@@ -3,7 +3,6 @@ import Search from '../../ui/dashboard/search/search'
 import Link from 'next/link'
 import Image from 'next/image'
 import { fetchUsers } from '../../lib/data'
-import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
 
@@ -49,14 +48,10 @@ const UsersPage = async () => {
                 ))}
               <td>
                 <div className='flex items-center gap-2.5'>
-                  <Link href='/dashboard/users/test' className='hover:bg-green-600 hover:text-white p-[5px]'>
-                    <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
-                      View
-                    </Badge>
+                  <Link href='/dashboard/users/test' className='bg-green-500 rounded-sm hover:bg-green-600 hover:text-white p-[5px]'>
+                    View
                   </Link>
-                  <Badge color='red' variant='outline' radius='sm' className='cursor-pointer hover:bg-red-600 hover:text-white p-[5px]'>
-                    Delete
-                  </Badge>
+                  <div className='cursor-pointer bg-red-500 hover:bg-red-600 hover:text-white p-[5px] rounded-sm'>Delete</div>
                 </div>
               </td>
             </tr>
