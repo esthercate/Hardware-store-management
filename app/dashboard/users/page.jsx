@@ -6,10 +6,10 @@ import { fetchUsers } from '../../lib/data'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
 
-const UsersPage = async () => {
+const UsersPage = async ({searchParams}) => {
   const tableHeadData = ['', 'Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
-
-  const users = await fetchUsers()
+  const q = searchParams?.query || ""
+  const users = await fetchUsers(q)
   console.log(users)
 
   return (
