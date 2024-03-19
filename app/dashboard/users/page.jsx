@@ -41,14 +41,14 @@ const UsersPage = async () => {
                   <Image src={user.img} alt={user.name} width={32} height={32} className='rounded-full' />
                 </div>
               </td>
-              <td>{ user.username}</td>
+              <td>{user.username}</td>
               <td>{user.phone}</td>
-              <td>{ user.createdAt}</td>
-              <td>{ user.isAdmin ? 'Admin' : 'CEO'}</td>
-              <td>{ user.isActive ? 'Active' : 'Passive'}</td>
+              <td>{user.createdAt}</td>
+              <td>{user.isAdmin ? 'Admin' : 'CEO'}</td>
+              <td>{user.isActive ? 'Active' : 'Passive'}</td>
               <td>
                 <div className='flex items-center gap-2.5'>
-                  <Link href='/dashboard/users/test' className='bg-green-500 rounded-sm hover:bg-green-600 hover:text-white p-[5px]'>
+                  <Link href={`/dashboard/users/${user._id}`} className='bg-green-500 rounded-sm hover:bg-green-600 hover:text-white p-[5px]'>
                     View
                   </Link>
                   <div className='cursor-pointer bg-red-500 hover:bg-red-600 hover:text-white p-[5px] rounded-sm'>Delete</div>
