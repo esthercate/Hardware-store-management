@@ -1,6 +1,7 @@
 'use client'
 
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import {useDebouncedCallback} from 'use-debounce'
 import React from 'react'
 import { MdSearch } from 'react-icons/md'
 
@@ -9,11 +10,16 @@ const Search = ({ placeholder }) => {
   const { replace } = useRouter()
   const pathname = usePathname()
 
-  const handleChange = (e) => {
+  const handleChange = useDebouncedCallback((e) => {
     const params = new URLSearchParams(searchParams)
-    params.set('q', e.target.value)
+    
+    if (e.target.value) {
+      e.target.value.length > 2 && params.set('q', e.target.value)
+    } else {
+      params.delete('q')
+    }
     replace(`${pathname}?${params}`)
-  }
+  }, 200)
 
   return (
     <div className='flex items-center gap-2.5 bg-slate-800 p-2.5 rounded-lg'>
