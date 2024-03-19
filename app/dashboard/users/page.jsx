@@ -34,18 +34,18 @@ const UsersPage = async () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user, index) => (
-            <tr key={index}>
-              <td className='p-2.5'>
-                <Image src={user.avatar} alt={user.name} width={32} height={32} className='rounded-full' />
+          {users.map((user) => (
+            <tr key={user.id}>
+              <td>
+                <div className='flex g-2'>
+                  <Image src={user.img} alt={user.name} width={32} height={32} className='rounded-full' />
+                </div>
               </td>
-              {Object.values(user)
-                .slice(0, -1)
-                .map((value, index) => (
-                  <td className='p-2.5' key={index}>
-                    {value}
-                  </td>
-                ))}
+              <td>{ user.username}</td>
+              <td>{user.phone}</td>
+              <td>{ user.createdAt}</td>
+              <td>{ user.isAdmin ? 'Admin' : 'CEO'}</td>
+              <td>{ user.isActive ? 'Active' : 'Passive'}</td>
               <td>
                 <div className='flex items-center gap-2.5'>
                   <Link href='/dashboard/users/test' className='bg-green-500 rounded-sm hover:bg-green-600 hover:text-white p-[5px]'>
