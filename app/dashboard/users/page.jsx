@@ -9,7 +9,8 @@ import Pagination from '../../ui/dashboard/pagination/pagination'
 const UsersPage = async ({searchParams}) => {
   const tableHeadData = ['', 'Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
   const q = searchParams?.q || ""
-  const users = await fetchUsers(q)
+  const page = searchParams?.page || 1
+  const users = await fetchUsers(q, page)
 
   return (
     <div className='bg-slate-900 p-5 rounded-lg mt-5'>
