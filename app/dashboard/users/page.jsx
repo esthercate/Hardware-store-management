@@ -49,10 +49,10 @@ const UsersPage = async ({searchParams}) => {
               <td>{user.isActive ? 'Active' : 'Passive'}</td>
               <td>
                 <div className='flex items-center gap-2.5'>
-                  <Link href={`/dashboard/users/${user._id}`} className='bg-green-500 rounded-lg hover:bg-green-600 hover:text-white p-[5px]'>
+                  <Link href={`/dashboard/users/${user._id}`} className='bg-green-500 rounded-lg hover:bg-green-600 text-white px-2 py-1'>
                     View
                   </Link>
-                  <div className='cursor-pointer bg-red-500 hover:bg-red-600 hover:text-white p-[5px] rounded-lg'>Delete</div>
+                  <div className='cursor-pointer bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-lg'>Delete</div>
                 </div>
               </td>
             </tr>
