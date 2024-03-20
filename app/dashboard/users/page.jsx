@@ -10,7 +10,8 @@ const UsersPage = async ({searchParams}) => {
   const tableHeadData = ['', 'Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
   const q = searchParams?.q || ""
   const page = searchParams?.page || 1
-  const {users, count} = await fetchUsers(q, page)
+  const users = await fetchUsers(q, page)
+  const count = users.length
   
   return (
     <div className='bg-slate-900 p-5 rounded-lg mt-5'>
