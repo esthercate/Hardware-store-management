@@ -7,7 +7,7 @@ export const fetchUsers = async (q, page) => {
   const ITEM_PER_PAGE = 2
   try {
     connectToDB()
-    const users = await User.find({ username: { $regex: regex } }).limit(ITEM_PER_PAGE)
+    const users = await User.find({ username: { $regex: regex } }).limit(ITEM_PER_PAGE).skip(ITEM_PER_PAGE *(page-1))
     return JSON.parse(JSON.stringify(users))
   } catch (error) {
     console.log(error)
