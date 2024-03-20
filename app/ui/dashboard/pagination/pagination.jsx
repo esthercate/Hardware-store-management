@@ -1,10 +1,24 @@
-import React from 'react'
+'use client'
 
-const Pagination = () => {
+import React from 'react'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+
+const Pagination = ({count}) => {
+   const searchParams = useSearchParams()
+   const { replace } = useRouter()
+  const pathname = usePathname()
+
+  const page = searchParams.get('page') || 1
+  const params = new URLSearchParams(searchParams)
+  const ITEM_PER_PAGE = 2
+
+  const hasPrev = ITEM_PER_PAGE * (parseInt(page)-1) > 0
+  const hasNext = ITEM_PER_PAGE * (parseInt(page) - 1) + ITEM_PER_PAGE < count
+
   return (
     <div className='w-full flex items-center justify-between p-2.5'>
-      <button className='cursor-pointer py-[5px] px-2.5 bg-slate-700 rounded-md'>Previous</button>
-      <button className='cursor-pointer py-[5px] px-2.5 bg-slate-700 rounded-md'>Next</button>
+      <button disabled={!hasPrev} className='cursor-pointer py-[5px] px-2.5 bg-slate-700 rounded-md'>Previous</button>
+      <button disable={!hasNext} className='cursor-pointer py-[5px] px-2.5 bg-slate-700 rounded-md'>Next</button>
     </div>
   )
 }
