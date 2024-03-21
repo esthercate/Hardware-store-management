@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const ComingSoon = () => {
   return (
@@ -24,7 +25,9 @@ const ComingSoon = () => {
         </div>
       </div>
       <div>
-        <p>About us</p>
+        <Link href={'/'}>About us</Link>
+        <Link href={'/'}>Newsletter</Link>
+        <Link href={'/'}>Contact us</Link>
       </div>
     </div>
   )
