@@ -23,6 +23,9 @@ const ComingSoon = () => {
           <span>5</span>
         </div>
       </div>
+      <div>
+        <p>About us</p>
+      </div>
     </div>
   )
 }
