@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 const ComingSoon = () => {
   return (
-    <div className='text-teal-600'>
+    <div className='text-slate-400 flex flex-col gap-5'>
       <h1>We're Coming Soon</h1>
       <p>Stay tuned for something Amazing</p>
-      <div>
+      <div className='flex gap-3'>
         <div>
           <p>Days</p>
           <span>399</span>
@@ -24,7 +24,7 @@ const ComingSoon = () => {
           <span>5</span>
         </div>
       </div>
-      <div>
+      <div className='flex gap-3'>
         <Link href={'/'}>About us</Link>
         <Link href={'/'}>Newsletter</Link>
         <Link href={'/'}>Contact us</Link>
