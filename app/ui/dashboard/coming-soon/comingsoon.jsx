@@ -7,19 +7,19 @@ const ComingSoon = () => {
       <h1>We are Coming Soon</h1>
       <p>Stay tuned for something Amazing!</p>
       <div className='flex gap-3'>
-        <div>
+        <div className='w-12 h-12 rounded-full border border-white'>
           <p>Days</p>
           <span>399</span>
         </div>
-        <div>
+        <div className='w-12 h-12 rounded-full border border-white'>
           <p>Hours</p>
           <span>14</span>
         </div>
-        <div>
+        <div className='w-12 h-12 rounded-full border border-white'>
           <p>Minutes</p>
           <span>32</span>
         </div>
-        <div>
+        <div className='w-12 h-12 rounded-full border border-white'>
           <p>Seconds</p>
           <span>5</span>
         </div>
