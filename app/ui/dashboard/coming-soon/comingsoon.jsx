@@ -4,7 +4,7 @@ import Link from 'next/link'
 const ComingSoon = () => {
   return (
     <div className='text-slate-400 flex flex-col gap-5'>
-      <h1>We are Coming Soon</h1>
+      <h1>We`re Coming Soon</h1>
       <p>Stay tuned for something Amazing!</p>
       <div className='flex gap-3'>
         <div className='w-12 h-12 rounded-full border border-white'>
