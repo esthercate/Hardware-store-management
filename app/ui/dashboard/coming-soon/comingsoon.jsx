@@ -6,7 +6,7 @@ const ComingSoon = () => {
     <div className='text-slate-400 flex flex-col gap-5'>
       <h1>We`re Coming Soon</h1>
       <p>Stay tuned for something Amazing!</p>
-      <div className='flex gap-3'>
+      <div className='flex gap-5'>
         <div className='w-12 h-12 rounded-full border border-white'>
           <p className='text-2xl'>Days</p>
           <span>399</span>
