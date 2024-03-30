@@ -6,7 +6,7 @@ const AddUserPage = () => {
       <form>
         <div className='flex justify-between gap-5 mb-4'>
           <input className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700' type='text' placeholder='Username' name='username' required />
-          <input className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700' type='phone' placeholder='Phone Number' name='phoneNo' required />
+          <input className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700' type='phone' placeholder='Phone Number' name='phone' required />
         </div>
         <div className='flex justify-between gap-5 mb-4'>
           <input className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700' type='email' placeholder='Email' name='email' required />
