@@ -9,7 +9,7 @@ const ComingSoon = () => {
       <div className='flex gap-5'>
         <div className='w-12 h-12 rounded-full border border-white'>
           <p className='text-2xl'>Days</p>
-          <span>399</span>
+          <span>100<span>
         </div>
         <div className='w-12 h-12 rounded-full border border-white'>
           <p className='text-2xl'>Hours</p>
