@@ -21,7 +21,7 @@ const ComingSoon = () => {
         </div>
         <div className='w-12 h-12 rounded-full border border-white'>
           <p className='text-2xl'>Seconds</p>
-          <span>5</span>
+          <span>8,640,000</span>
         </div>
       </div>
       <div className='flex gap-3'>
