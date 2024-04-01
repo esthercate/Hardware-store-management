@@ -17,7 +17,7 @@ const ComingSoon = () => {
         </div>
         <div className='w-12 h-12 rounded-full border border-white'>
           <p className='text-2xl'>Minutes</p>
-          <span>32</span>
+          <span>144,000</span>
         </div>
         <div className='w-12 h-12 rounded-full border border-white'>
           <p className='text-2xl'>Seconds</p>
