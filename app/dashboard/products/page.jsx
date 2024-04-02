@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
+import {searchParams} from 'next/navigation'
 
 const ProductsPage = async () => {
   const tableHeadData = ['Title', 'Description', 'Buying Price', 'Selling Price', 'Created At', 'Stock', 'Action']
