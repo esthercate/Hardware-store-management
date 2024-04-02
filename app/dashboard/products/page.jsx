@@ -6,66 +6,67 @@ import Link from 'next/link'
 import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
-import {searchParams} from 'next/navigation'
+import { searchParams } from 'next/navigation'
+import { fetchProducts } from '../../lib/data'
 
 const ProductsPage = async () => {
   const tableHeadData = ['Title', 'Description', 'Buying Price', 'Selling Price', 'Created At', 'Stock', 'Action']
   const q = searchParams?.q || ""
   const page = searchParams?.page || 1
-  const users = await fetchProducts(q, page)
-  const count = users.length
+  const products = await fetchProducts(q, page)
+  const count = products.length
 
   // Array of product data
-  const products = [
-    {
-      title: 'Cement',
-      description: '50kgs',
-      buyingPrice: 'Ksh. 600',
-      sellingPrice: 'Ksh. 750',
-      createdAt: '28.02.2024',
-      stock: '32',
-    },
-    {
-      title: 'Steel Bars',
-      description: '6mm',
-      buyingPrice: 'Ksh. 800',
-      sellingPrice: 'Ksh. 1000',
-      createdAt: '27.02.2024',
-      stock: '100',
-    },
-    {
-      title: 'Paint',
-      description: '5',
-      buyingPrice: 'Ksh. 1000',
-      sellingPrice: 'Ksh. 1200',
-      createdAt: '26.02.2024',
-      stock: '20',
-    },
-    {
-      title: 'Cement',
-      description: '50kgs',
-      buyingPrice: 'Ksh. 600',
-      sellingPrice: 'Ksh. 750',
-      createdAt: '28.02.2024',
-      stock: '32',
-    },
-    {
-      title: 'Steel Bars',
-      description: '6mm',
-      buyingPrice: 'Ksh. 800',
-      sellingPrice: 'Ksh. 1000',
-      createdAt: '27.02.2024',
-      stock: '100',
-    },
-    {
-      title: 'Paint',
-      description: '5',
-      buyingPrice: 'Ksh. 1000',
-      sellingPrice: 'Ksh. 1200',
-      createdAt: '26.02.2024',
-      stock: '20',
-    },
-  ]
+  // const products = [
+  //   {
+  //     title: 'Cement',
+  //     description: '50kgs',
+  //     buyingPrice: 'Ksh. 600',
+  //     sellingPrice: 'Ksh. 750',
+  //     createdAt: '28.02.2024',
+  //     stock: '32',
+  //   },
+  //   {
+  //     title: 'Steel Bars',
+  //     description: '6mm',
+  //     buyingPrice: 'Ksh. 800',
+  //     sellingPrice: 'Ksh. 1000',
+  //     createdAt: '27.02.2024',
+  //     stock: '100',
+  //   },
+  //   {
+  //     title: 'Paint',
+  //     description: '5',
+  //     buyingPrice: 'Ksh. 1000',
+  //     sellingPrice: 'Ksh. 1200',
+  //     createdAt: '26.02.2024',
+  //     stock: '20',
+  //   },
+  //   {
+  //     title: 'Cement',
+  //     description: '50kgs',
+  //     buyingPrice: 'Ksh. 600',
+  //     sellingPrice: 'Ksh. 750',
+  //     createdAt: '28.02.2024',
+  //     stock: '32',
+  //   },
+  //   {
+  //     title: 'Steel Bars',
+  //     description: '6mm',
+  //     buyingPrice: 'Ksh. 800',
+  //     sellingPrice: 'Ksh. 1000',
+  //     createdAt: '27.02.2024',
+  //     stock: '100',
+  //   },
+  //   {
+  //     title: 'Paint',
+  //     description: '5',
+  //     buyingPrice: 'Ksh. 1000',
+  //     sellingPrice: 'Ksh. 1200',
+  //     createdAt: '26.02.2024',
+  //     stock: '20',
+  //   },
+  // ]
 
   return (
     <div className='bg-slate-900 p-5 rounded-lg mt-5'>
