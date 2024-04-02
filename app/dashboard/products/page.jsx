@@ -99,7 +99,7 @@ const ProductsPage = async () => {
               ))}
               <td>
                 <div className='flex items-center gap-2.5'>
-                  <Link href='/dashboard/products/test'>
+                  <Link href={`/dashboard/products/${product._id}`}>
                     <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
                       View
                     </Badge>
