@@ -90,8 +90,8 @@ const ProductsPage = async () => {
           </tr>
         </thead>
         <tbody>
-          {products.map((product, index) => (
-            <tr key={index}>
+          {products.map((product) => (
+            <tr key={product.id}>
               {Object.values(product).map((value, index) => (
                 <td className='p-2.5' key={index}>
                   {value}
