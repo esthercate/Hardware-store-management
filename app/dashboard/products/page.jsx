@@ -7,8 +7,12 @@ import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
 
-const ProductsPage = () => {
+const ProductsPage = async () => {
   const tableHeadData = ['Title', 'Description', 'Buying Price', 'Selling Price', 'Created At', 'Stock', 'Action']
+  const q = searchParams?.q || ""
+  const page = searchParams?.page || 1
+  const users = await fetchUsers(q, page)
+  const count = users.length
 
   // Array of product data
   const products = [
