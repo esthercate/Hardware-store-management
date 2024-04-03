@@ -96,7 +96,7 @@ const ProductsPage = async () => {
               <td>{product.description}</td>
               <td>{product.buyingPrice}</td>
               <td>{product.sellingPrice}</td>
-              <td>{user.createdAt?.toString().slice(0, 10)}</td>
+              <td>{product.createdAt?.toString().slice(0, 10)}</td>
               <td>{product.stock}</td>
               <td>
                 <div className='flex items-center gap-2.5'>
