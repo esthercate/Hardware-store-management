@@ -6,12 +6,11 @@ import Link from 'next/link'
 import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
-import { searchParams } from 'next/navigation'
 import { fetchProducts } from '../../lib/data'
 
-const ProductsPage = async () => {
+const ProductsPage = async ({ searchParams }) => {
   const tableHeadData = ['Title', 'Description', 'Buying Price', 'Selling Price', 'Created At', 'Stock', 'Action']
-  const q = searchParams?.q || ""
+  const q = searchParams?.q || ''
   const page = searchParams?.page || 1
   const products = await fetchProducts(q, page)
   const count = products.length
