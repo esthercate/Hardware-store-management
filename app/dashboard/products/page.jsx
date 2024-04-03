@@ -92,11 +92,12 @@ const ProductsPage = async () => {
         <tbody>
           {products.map((product) => (
             <tr key={product.id}>
-              {Object.values(product).map((value, index) => (
-                <td className='p-2.5' key={index}>
-                  {value}
-                </td>
-              ))}
+              <td>{product.title}</td>
+              <td>{product.description}</td>
+              <td>{product.buyingPrice}</td>
+              <td>{product.sellingPrice}</td>
+              <td>{user.createdAt?.toString().slice(0, 10)}</td>
+              <td>{product.stock}</td>
               <td>
                 <div className='flex items-center gap-2.5'>
                   <Link href={`/dashboard/products/${product._id}`}>
@@ -118,7 +119,7 @@ const ProductsPage = async () => {
           ))}
         </tbody>
       </table>
-      <Pagination />
+      <Pagination count={count} />
     </div>
   )
 }

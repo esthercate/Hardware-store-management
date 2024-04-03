@@ -1,4 +1,4 @@
-import { User } from './models'
+import { User, Product } from './models'
 import {connectToDB} from './utils'
 
 export const fetchUsers = async (q, page) => {
