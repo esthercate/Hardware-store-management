@@ -2,6 +2,7 @@ import { User, Product } from './models'
 import { connectToDB } from './utils'
 import { revalidatePath } from 'next/cache'
 import redirect from 'next/navigation' 
+import bcrypt from 'bcrypt'
 
 export const addUser = async (FormData) => {
   'use server'
@@ -9,11 +10,13 @@ export const addUser = async (FormData) => {
   
   try {
     connectToDB()
+    const salt = await bcrypt.genSalt(10)
+    const hashedPassword = await bcrypt.hash(password, salt)
     const newUser = new User({
       username,
       phone,
       email,
-      password,
+      password:hashedPassword,
       isAdmin,
       isActive,
     })
