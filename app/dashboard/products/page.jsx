@@ -3,7 +3,6 @@
 import React from 'react'
 import Search from '../../ui/dashboard/search/search'
 import Link from 'next/link'
-import { Badge } from '@mantine/core'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
 import { fetchProducts } from '../../lib/data'
@@ -47,19 +46,13 @@ const ProductsPage = async ({ searchParams }) => {
               <td>{product.stock}</td>
               <td>
                 <div className='flex items-center gap-2.5'>
-                  <Link href={`/dashboard/products/${product._id}`}>
-                    <Badge color='green' variant='outline' radius='sm' className='hover:bg-green-600 hover:text-white p-[5px]'>
-                      View
-                    </Badge>
+                  <Link href={`/dashboard/products/${product._id}`} className='bg-green-500 rounded-lg hover:bg-green-600 text-white px-2 py-1'>
+                    View
                   </Link>
-                  <Link href='/'>
-                    <Badge color='blue' variant='outline' radius='sm' className='hover:bg-blue-600 hover:text-white p-[5px]'>
-                      Update
-                    </Badge>
+                  <Link href='/' className='bg-blue-500 rounded-lg hover:bg-blue-600 text-white px-2 py-1'>
+                    Update
                   </Link>
-                  <Badge color='red' variant='outline' radius='sm' className='cursor-pointer hover:bg-red-600 hover:text-white p-[5px]'>
-                    Delete
-                  </Badge>
+                  <div className='cursor-pointer bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-lg'>Delete</div>
                 </div>
               </td>
             </tr>
