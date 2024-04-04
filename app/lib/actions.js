@@ -1,5 +1,7 @@
 import { User, Product } from './models'
-import {connectToDB} from './utils'
+import { connectToDB } from './utils'
+import { revalidatePath } from 'next/cache'
+import redirect from 'next/navigation' 
 
 export const addUser = async (FormData) => {
   'use server'
@@ -20,6 +22,9 @@ export const addUser = async (FormData) => {
     console.log(error)
     throw new Error('Failed to create user')
   }
+
+  revalidatePath('/dashboard/users')
+  redirect('/dashboard/user')
 }
 
 export const addProduct = async (FormData) => {
@@ -40,4 +45,6 @@ export const addProduct = async (FormData) => {
     console.log(error)
     throw new Error('Failed to create product')
   }
+  revalidatePath('/dashboard/products')
+  redirect('/dashboard/products')
 }
