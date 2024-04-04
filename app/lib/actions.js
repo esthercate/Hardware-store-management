@@ -49,3 +49,15 @@ export const addProduct = async (FormData) => {
   revalidatePath('/dashboard/products')
   redirect('/dashboard/products')
 }
+
+export const deleteProduct = async (FormData) => {
+  const { id } = Object.fromEntries(FormData)
+  try {
+    connectToDB()
+    await Product.findByIdAndDelete(id)
+  } catch (error) {
+    console.log(error)
+    throw new Error('Failed to delete product')
+  }
+  revalidatePath('/dashboard/products')
+}
