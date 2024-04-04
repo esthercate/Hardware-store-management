@@ -8,11 +8,11 @@ const AddProductPage = () => {
         <div className='flex justify-between gap-5 mb-4'>
           <input className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700' type='text' placeholder='Title' name='title' required />
           <select name='cat' id='cat' className='p-5 w-1/2 bg-transparent rounded-md border-2 border-slate-700'>
-            <option value='general'>Choose a Category</option>
-            <option value='category1'>Category 1</option>
-            <option value='category2'>Category 2</option>
-            <option value='category3'>Category 3</option>
-            <option value='category4'>Category 4</option>
+            <option>Choose a Category</option>
+            <option value='general'>General</option>
+            <option value='electronics'>Electronics</option>
+            <option value='construction'>Construction</option>
+            <option value='roofing'>Roofing</option>
           </select>
         </div>
         <div className='flex justify-between gap-5 mb-4'>
