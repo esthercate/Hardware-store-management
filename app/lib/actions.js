@@ -1,3 +1,5 @@
+'use server'
+  
 import { User, Product } from './models'
 import { connectToDB } from './utils'
 import { revalidatePath } from 'next/cache'
@@ -5,9 +7,7 @@ import redirect from 'next/navigation'
 import bcrypt from 'bcrypt'
 
 export const addUser = async (FormData) => {
-  'use server'
   const { username, phone, email, password, isAdmin, isActive } = Object.fromEntries(FormData)
-  
   try {
     connectToDB()
     const salt = await bcrypt.genSalt(10)
@@ -31,9 +31,7 @@ export const addUser = async (FormData) => {
 }
 
 export const addProduct = async (FormData) => {
-  'use server'
   const { title, description, buyingPrice, sellingPrice, stock } = Object.fromEntries(FormData)
-
   try {
     connectToDB()
     const newProduct = new Product({
