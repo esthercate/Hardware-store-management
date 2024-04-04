@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
 import { fetchProducts } from '../../lib/data'
+import {deleteProduct} from '../../lib/actions'
 
 const ProductsPage = async ({ searchParams }) => {
   const tableHeadData = ['Title', 'Description', 'Buying Price', 'Selling Price', 'Created At', 'Stock', 'Action']
@@ -52,7 +53,10 @@ const ProductsPage = async ({ searchParams }) => {
                   <Link href='/' className='bg-blue-500 rounded-lg hover:bg-blue-600 text-white px-2 py-1'>
                     Update
                   </Link>
-                  <div className='cursor-pointer bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-lg'>Delete</div>
+                  <form action={deleteProduct}>
+                    <input type='hidden' value={product.id} name='id' />
+                    <button className='cursor-pointer bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-lg'>Delete</button>
+                  </form>
                 </div>
               </td>
             </tr>
