@@ -42,10 +42,10 @@ const ProductsPage = async ({ searchParams }) => {
               <td className='p-2.5'>{product.title}</td>
               <td className='p-2.5'>{product.description}</td>
               <td className='p-2.5'>{product.buyingPrice}</td>
-              <td>{product.sellingPrice}</td>
-              <td>{product.createdAt?.toString().slice(0, 10)}</td>
-              <td>{product.stock}</td>
-              <td>
+              <td className='p-2.5'>{product.sellingPrice}</td>
+              <td className='p-2.5'>{product.createdAt?.toString().slice(0, 10)}</td>
+              <td className='p-2.5'>{product.stock}</td>
+              <td className='p-2.5'>
                 <div className='flex items-center gap-2.5'>
                   <Link href={`/dashboard/products/${product._id}`} className='bg-green-500 rounded-lg hover:bg-green-600 text-white px-2 py-1'>
                     View
