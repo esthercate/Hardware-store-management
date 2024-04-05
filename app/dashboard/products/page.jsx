@@ -39,7 +39,7 @@ const ProductsPage = async ({ searchParams }) => {
         <tbody>
           {products.map((product) => (
             <tr key={product.id}>
-              <td>{product.title}</td>
+              <td className='p-2.5'>{product.title}</td>
               <td>{product.description}</td>
               <td>{product.buyingPrice}</td>
               <td>{product.sellingPrice}</td>
