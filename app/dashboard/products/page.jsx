@@ -40,8 +40,8 @@ const ProductsPage = async ({ searchParams }) => {
           {products.map((product) => (
             <tr key={product.id}>
               <td className='p-2.5'>{product.title}</td>
-              <td>{product.description}</td>
-              <td>{product.buyingPrice}</td>
+              <td className='p-2.5'>{product.description}</td>
+              <td className='p-2.5'>{product.buyingPrice}</td>
               <td>{product.sellingPrice}</td>
               <td>{product.createdAt?.toString().slice(0, 10)}</td>
               <td>{product.stock}</td>
