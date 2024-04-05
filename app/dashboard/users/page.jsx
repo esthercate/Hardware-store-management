@@ -42,7 +42,7 @@ const UsersPage = async ({searchParams}) => {
                   <Image src={user.img} alt={user.name} width={32} height={32} className='rounded-full' />
                 </div>
               </td>
-              <td>{user.username}</td>
+              <td className='p-2.5'>{user.username}</td>
               <td>{user.phone}</td>
               <td>{user.createdAt?.toString().slice(0, 10)}</td>
               <td>{user.isAdmin ? 'Admin' : 'CEO'}</td>
