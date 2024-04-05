@@ -47,7 +47,7 @@ const UsersPage = async ({searchParams}) => {
               <td className='p-2.5'>{user.createdAt?.toString().slice(0, 10)}</td>
               <td className='p-2.5'>{user.isAdmin ? 'Admin' : 'CEO'}</td>
               <td className='p-2.5'>{user.isActive ? 'Active' : 'Passive'}</td>
-              <td>
+              <td className='p-2.5'>
                 <div className='flex items-center gap-2.5'>
                   <Link href={`/dashboard/users/${user._id}`} className='bg-green-500 rounded-lg hover:bg-green-600 text-white px-2 py-1'>
                     View
