@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { fetchUsers } from '../../lib/data'
 import { MdOutlineAdd } from 'react-icons/md'
 import Pagination from '../../ui/dashboard/pagination/pagination'
+import {deleteUser} from '../../lib/actions'
 
 const UsersPage = async ({searchParams}) => {
   const tableHeadData = ['', 'Name', 'Phone No.', 'Date Created', 'Role', 'Status', 'Action']
@@ -52,7 +53,10 @@ const UsersPage = async ({searchParams}) => {
                   <Link href={`/dashboard/users/${user._id}`} className='bg-green-500 rounded-lg hover:bg-green-600 text-white px-2 py-1'>
                     View
                   </Link>
-                  <div className='cursor-pointer bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-lg'>Delete</div>
+                  <form action={deleteUser}>
+                    <input type='hidden' value={user.id} name='id' />
+                    <button className='cursor-pointer bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-lg'>Delete</button>
+                  </form>
                 </div>
               </td>
             </tr>
