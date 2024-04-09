@@ -12,10 +12,10 @@ const InvoicesPage = () => {
           <p>Email</p>
         </div>
         <div>
-          <h3>Payment Method</h3>
+          <h3>Payment Method:</h3>
           <p>Mpesa</p>
           <span>Till No: 123123</span>
-          <span>Send Many: 070000000</span>
+          <span>Send Many: 0700000000</span>
         </div>
         <div>
           <h3>Terms & Conditions</h3>
