@@ -11,8 +11,10 @@ const AddProductPage = () => {
             <option>Choose a Category</option>
             <option value='general'>General</option>
             <option value='electronics'>Electronics</option>
-            <option value='construction'>Construction</option>
-            <option value='roofing'>Roofing</option>
+            <option value='gas'>Cooking Gas</option>
+            <option value='hardware'>Hardware Products</option>
+            <option value='building'>Building Material</option>
+            <option value='spares'>Motorbike Spares</option>
           </select>
         </div>
         <div className='flex justify-between gap-5 mb-4'>

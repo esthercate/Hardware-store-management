@@ -4,7 +4,7 @@ const InvoicesPage = () => {
   return (
     <div>
       <div>
-        <h1>TV Hardware</h1>
+        <h1>TV Hardware Stores</h1>
         <div>
           <span>To: </span>
           <h2>Mrs. Joyce</h2>
