@@ -1,12 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
+import {fetchUser} from '../../../lib/data'
 
-const SingleUserPage = () => {
+const SingleUserPage = async ({ params }) => {
+  const {id} = params
+  const user = fetchUser(id)
   return (
     <div className='flex gap-10 mt-5'>
       <div className='flex flex-col gap-4 font-bold'>
         <Image className='relative overflow-hidden rounded-lg' src='/profile.png' alt='profile picture' width='300' height='300' />
-        <p>Charles V</p>
+        <p>{user.username}</p>
       </div>
       <div className='flex-auto bg-slate-900 p-5 rounded-lg'>
         <form className='flex flex-col'>
