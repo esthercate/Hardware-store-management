@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import {fetchUser} from '../../../lib/data'
+import { fetchUser } from '../../../lib/data'
+import {updateUser} from '../../../lib/actions'
 
 const SingleUserPage = async ({ params }) => {
   const {id} = params
@@ -12,7 +13,8 @@ const SingleUserPage = async ({ params }) => {
         <p>{user.username}</p>
       </div>
       <div className='flex-auto bg-slate-900 p-5 rounded-lg'>
-        <form className='flex flex-col'>
+        <form className='flex flex-col' action={updateUser}>
+          <input type='hidden' name='id' value={user.id} />
           <label>Username</label>
           <input className='p-5 my-2.5 w-full bg-transparent rounded-md border-2 border-slate-700' type='text' name='username' placeholder={user.username} />
           <label>Phone Number</label>
