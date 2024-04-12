@@ -34,8 +34,15 @@ export const updateUser = async (FormData) => {
   const { id, username, phone, email, password, isAdmin, isActive } = Object.fromEntries(FormData)
   try {
     connectToDB()
-    
-    await newUser.save()
+    const updateFields = {
+      username, phone, email, password, isAdmin, isActive,
+    }
+
+    object.keys(updateFields).forEach(
+      (key) => (updatedFields[key] === '' || undefined) && delete updateFields[key]
+    )
+      
+    await User.findByIdAndUpdate(id, updateFields)
   } catch (error) {
     console.log(error)
     throw new Error('Failed to update user')
