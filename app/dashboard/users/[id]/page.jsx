@@ -8,7 +8,7 @@ const SingleUserPage = async ({ params }) => {
   return (
     <div className='flex gap-10 mt-5'>
       <div className='flex flex-col gap-4 font-bold'>
-        <Image className='relative overflow-hidden rounded-lg' src='/profile.png' alt='profile picture' width='300' height='300' />
+        <Image className='relative overflow-hidden rounded-lg' src={user.img || '/profile.png' }alt='profile picture' width='300' height='300' />
         <p>{user.username}</p>
       </div>
       <div className='flex-auto bg-slate-900 p-5 rounded-lg'>
