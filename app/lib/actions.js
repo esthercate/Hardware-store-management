@@ -30,6 +30,21 @@ export const addUser = async (FormData) => {
   redirect('/dashboard/user')
 }
 
+export const updateUser = async (FormData) => {
+  const { id, username, phone, email, password, isAdmin, isActive } = Object.fromEntries(FormData)
+  try {
+    connectToDB()
+    
+    await newUser.save()
+  } catch (error) {
+    console.log(error)
+    throw new Error('Failed to update user')
+  }
+
+  revalidatePath('/dashboard/users')
+  redirect('/dashboard/user')
+}
+
 export const addProduct = async (FormData) => {
   const { title, description, buyingPrice, sellingPrice, stock } = Object.fromEntries(FormData)
   try {
