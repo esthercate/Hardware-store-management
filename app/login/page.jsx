@@ -8,6 +8,7 @@ const Login = () => {
       <div className='flex bg-slate-900 rounded-lg p-12 w-3/4 h-[500px] gap-8'>
         <div className='flex flex-col w-1/2 justify-center gap-6'>
           <h1 className='text-3xl font-bold'>Welcome!</h1>
+          <div className='border-t-2 border-green-600 w-[50px]' />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam, lectus vel fringilla varius.</p>
           <button className='py-2 px-3 border-2 border-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white border-0 font-bold w-1/2' type='submit'>
             Get Started
