@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import {authenticate} from '../lib/actions'
+import loginImg from '../../public/login.svg'
 
 const Login = () => {
   return (
     <div className='w-screen h-screen flex items-center justify-center'>
       <div className='flex bg-slate-900 rounded-lg p-12 w-3/4 h-[500px] gap-8'>
-        <div className='flex flex-col w-1/2 justify-center gap-6'>
+        <div className="flex flex-col w-1/2 justify-center gap-6 bg-[url('../../public/login.svg')] bg-cover bg-no-repeat bg-center">
           <h1 className='text-3xl font-bold'>Welcome!</h1>
           <div className='border-t-2 border-green-600 w-[50px]' />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam, lectus vel fringilla varius.</p>
