@@ -14,7 +14,7 @@ const Login = () => {
           </button>
         </div>
         <form action={authenticate} className='flex flex-col justify-center gap-7 '>
-          <h1 className='text-3xl font-bold mb-3 text-center'>Login</h1>
+          <h1 className='text-3xl font-bold mb-3'>Login</h1>
           <input type='text' placeholder='Username' name='username' className='p-5 border-solid border-2 border-slate-700 rounded-md bg-transparent' />
           <input type='password' placeholder='Password' name='password' className='p-5 border-solid border-2 border-slate-700 rounded-md bg-transparent' />
           <button className='p-5 bg-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white border-0 font-bold' type='submit'>
