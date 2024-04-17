@@ -5,7 +5,6 @@ import { connectToDB } from './utils'
 import { revalidatePath } from 'next/cache'
 import redirect from 'next/navigation' 
 import bcrypt from 'bcrypt'
-// import { signIn } from '@/auth'
 
 export const addUser = async (FormData) => {
   const { username, phone, email, password, isAdmin, isActive } = Object.fromEntries(FormData)
@@ -122,14 +121,3 @@ export const deleteUser = async (FormData) => {
   }
   revalidatePath('/dashboard/users')
 }
-
-// export const authenticate = async (formData) => {
-//   const { username, password } = Object.fromEntries(FormData)
-
-//   try {
-//     await signIn('credentials', {username, password})
-//   } catch (error) {
-//     console.log(error)
-//     throw error
-//   }
-// }
