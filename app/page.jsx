@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Home page</div>
+  return <div className='text-2xl'>Home page</div>
 }
