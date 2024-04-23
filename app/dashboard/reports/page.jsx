@@ -5,7 +5,7 @@ const ReportsPage = () => {
   return (
   <div>
     <ComingSoon />
-    </div>
+  </div>
   )
 }
 

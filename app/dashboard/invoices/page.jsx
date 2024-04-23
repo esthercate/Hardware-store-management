@@ -1,9 +1,11 @@
 import React from 'react'
+import ComingSoon from '../../ui/dashboard/coming-soon/comingsoon'
 
 const InvoicesPage = () => {
   return (
     <div>
-      <div>
+      <ComingSoon />
+      {/* <div>
         <h1>TV Hardware Stores</h1>
         <div>
           <span>To: </span>
@@ -22,7 +24,7 @@ const InvoicesPage = () => {
           <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
         </div>
       </div>
-      <div>right section</div>
+      <div>right section</div> */}
     </div>
   )
 }
