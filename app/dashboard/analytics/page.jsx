@@ -1,7 +1,12 @@
 import React from 'react'
+import ComingSoon from '../../ui/dashboard/coming-soon/comingsoon'
 
 const AnalyticsPage = () => {
-  return <div>Analytics Page</div>
+  return (
+    <div>
+      <ComingSoon />
+    </div>
+  )
 }
 
 export default AnalyticsPage

@@ -5,7 +5,8 @@ const ReportsPage = () => {
   return (
   <div>
     <ComingSoon />
-  </div>)
+    </div>
+  )
 }
 
 export default ReportsPage
