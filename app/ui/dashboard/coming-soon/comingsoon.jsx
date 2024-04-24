@@ -31,7 +31,9 @@ const ComingSoon = () => {
         <Link className='hover:underline' href={'/newsletter'}>
           Newsletter
         </Link>
-        <Link href={'/contact'}>Contact us</Link>
+        <Link className='hover:underline' href={'/contact'}>
+          Contact us
+        </Link>
       </div>
     </div>
   )
