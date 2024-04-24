@@ -25,13 +25,13 @@ const ComingSoon = () => {
         </div>
       </div>
       <div className='flex gap-3'>
-        <Link className='hover:underline hover:text-slate-400' href={'/about'}>
+        <Link className='hover:underline hover:text-green-600' href={'/about'}>
           About us
         </Link>
-        <Link className='hover:underline' href={'/newsletter'}>
+        <Link className='hover:underline hover:text-green-600' href={'/newsletter'}>
           Newsletter
         </Link>
-        <Link className='hover:underline' href={'/contact'}>
+        <Link className='hover:underline hover:text-green-600' href={'/contact'}>
           Contact us
         </Link>
       </div>
