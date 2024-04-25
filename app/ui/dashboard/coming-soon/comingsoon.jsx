@@ -6,22 +6,22 @@ const ComingSoon = () => {
     <div className='flex flex-col gap-3 bg-slate-900 justify-center items-center py-40 rounded-lg mt-5'>
       <h1 className='font-semibold text-3xl text-white'>We`re Coming Soon</h1>
       <p className='text-xs'>Stay tuned for something amazing!</p>
-      <div className='flex gap-10 my-10'>
-        <div className='w-12 h-12 rounded-full border border-white'>
+      <div className='flex gap-8 my-10'>
+        <div className=' flex flex-col justify-center gap-1 items-center w-24 h-24 rounded-full border border-green-600'>
           <p className='text-xs'>Days</p>
-          <span>100</span>
+          <span className='text-xl font-bold'>100</span>
         </div>
-        <div className='w-12 h-12 rounded-full border border-white'>
+        <div className=' flex flex-col justify-center gap-1 items-center w-24 h-24 rounded-full border border-white hover:border-green-600'>
           <p className='text-xs'>Hours</p>
-          <span>2400</span>
+          <span className='text-xl font-bold'>200</span>
         </div>
-        <div className='w-12 h-12 rounded-full border border-white'>
+        <div className=' flex flex-col justify-center gap-1 items-center w-24 h-24 rounded-full border border-white hover:border-green-600'>
           <p className='text-xs'>Minutes</p>
-          <span>54</span>
+          <span className='text-xl font-bold'>50</span>
         </div>
-        <div className='w-12 h-12 rounded-full border border-white'>
-          <p className='text-xs'>Seconds</p>
-          <span>35</span>
+        <div className=' flex flex-col justify-center gap-1 items-center w-24 h-24 rounded-full border border-white hover:border-green-600'>
+          <p className='text-xs'>Second</p>
+          <span className='text-xl font-bold'>20</span>
         </div>
       </div>
       <div className='flex flex-col md:flex-row justify-center items-center gap-3'>
