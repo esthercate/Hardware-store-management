@@ -24,7 +24,7 @@ const ComingSoon = () => {
           <span className='text-xl font-bold'>20</span>
         </div>
       </div>
-      <div className='flex flex-col md:flex-row justify-center items-center gap-3'>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-6'>
         <Link className='hover:underline hover:text-green-600' href={'/about'}>
           About us
         </Link>
