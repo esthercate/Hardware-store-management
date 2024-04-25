@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 const ComingSoon = () => {
   return (
-    <div className='flex flex-col text-slate-400 gap-8 bg-slate-900 justify-center items-center py-40 rounded-lg mt-5'>
-      <h1 className='font-semibold text-2xl'>We`re Coming Soon</h1>
-      <p>Stay tuned for something Amazing!</p>
+    <div className='flex flex-col gap-3 bg-slate-900 justify-center items-center py-40 rounded-lg mt-5'>
+      <h1 className='font-semibold text-3xl text-white'>We`re Coming Soon</h1>
+      <p className='text-sm'>Stay tuned for something Amazing!</p>
       <div className='flex gap-6'>
         <div className='w-12 h-12 rounded-full border border-white'>
           <p className='text-2xl'>Days</p>
