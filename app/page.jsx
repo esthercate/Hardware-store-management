@@ -2,7 +2,7 @@ import Login from './login/page'
 
 export default function Home () {
   return (
-    <div>
+    <div className='flex gap-5'>
       <Login />
     </div>
   ) 
