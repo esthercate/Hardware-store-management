@@ -10,7 +10,7 @@ const Login = () => {
           <h1 className='text-3xl font-bold'>Welcome!</h1>
           <div className='border-t-2 border-green-600 w-[50px]' />
           <p className='text-sm'>Manage stock inventory and invoices effortlessly to ensure seamless operations and meet customer demands efficiently.</p>
-          <Link href='/' className='py-2 px-3 mt-2 border-2 border-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white font-bold w-1/2'>
+          <Link href='/' className='py-2 px-3 mt-2 border-2 border-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white text-center font-bold w-1/2'>
             Get Started
           </Link>
         </div>
