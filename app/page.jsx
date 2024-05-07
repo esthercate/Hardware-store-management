@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div className='flex gap-10 w-full'>
         <div className='flex flex-col gap-6 w-1/2'>
-          <h1>Manage your inventory easily</h1>
+          <h1 className='text-3xl font-bold'>Manage your inventory easily</h1>
           <p>
             Lorem int qui commodo velit voluptate ullamco fugiat. Ullamco labore Lorem aute eiusmod consequat. Enim nostrud proident fugiat consectetur. Cillum in dolor Lorem eu exercitation velit mollit consequat laboris.
           </p>
@@ -23,7 +23,7 @@ export default function Home() {
             </Link>
         </div>
 
-        <div> dashboard Images</div>
+        <div>Dashboard Images</div>
       </div>
     </div>
   )
