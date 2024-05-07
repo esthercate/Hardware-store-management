@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className='flex flex-col p-12 w-full gap-10'>
+    <div className='flex flex-col px-12 py-6 w-full gap-10'>
       <div className='flex justify-between items-center'>
         <span className='text-green-700 text-lg font-bold'>TV Hardware Stores</span>
         <div className='flex gap-6 justify-center items-center'>
