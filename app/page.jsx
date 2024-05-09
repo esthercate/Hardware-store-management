@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-      
+       <h1>Decide on what to add here</h1>
       </div>
     </div>
   )
