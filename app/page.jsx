@@ -6,7 +6,7 @@ export default function Home() {
     <div className='flex flex-col px-3 lg:px-12 py-6 w-full h-screen gap-8 md:gap-20'>
       <div className='flex justify-between items-center'>
         <span className='text-green-700 text-lg font-bold'>TV Hardware Stores</span>
-        <div className='hidden lg:flex gap-7 font-bold'>
+        <div className='hidden md:flex gap-7 font-bold'>
           <span className='hover:text-green-700 cursor-pointer'>Home</span>
           <span className='hover:text-green-700 cursor-pointer'>About</span>
           <span className='hover:text-green-700 cursor-pointer'>Contact</span>
