@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='flex flex-col px-3 lg:px-12 py-6 w-full h-screen gap-20'>
+    <div className='flex flex-col px-3 lg:px-12 py-6 w-full h-screen gap-8 md:gap-20'>
       <div className='flex justify-between items-center'>
         <span className='text-green-700 text-lg font-bold'>TV Hardware Stores</span>
         <div className='hidden lg:flex gap-7 font-bold'>
@@ -16,7 +16,7 @@ export default function Home() {
         </Link>
       </div>
       <div className='flex justify-center items-center w-full h-full'>
-        <div className='flex flex-col items-center gap-7 w-1/2'>
+        <div className='flex flex-col items-center gap-7 w-full md:w-1/2'>
           <h1 className='flex flex-col text-2xl lg:text-4xl font-bold text-center'>
             Streamline your business <span>growth with ease.</span>
           </h1>
