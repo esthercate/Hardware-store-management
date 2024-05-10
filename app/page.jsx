@@ -15,7 +15,7 @@ export default function Home() {
           Login
         </Link>
       </div>
-      <div className='flex justify-center w-full h-full'>
+      <div className='flex justify-center items-center w-full h-full'>
         <div className='flex flex-col items-center gap-7 w-1/2'>
           <h1 className='flex flex-col text-4xl font-bold text-center'>
             Streamline your business <span>growth with ease.</span>
