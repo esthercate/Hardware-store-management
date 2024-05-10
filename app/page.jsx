@@ -21,7 +21,7 @@ export default function Home() {
             Streamline your business <span>growth with ease.</span>
           </h1>
           <p className='text-sm text-center'>Lorem int qui commodo velit voluptate ullamco fugiat. Ullamco labore Lorem aute eiusmod consequat. Enim nostrud proident fugiat consectetur.</p>
-          <Link href='/login' className='py-2 px-3 mt-2 border-2 border-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white text-center font-bold w-2/5 md:w-full'>
+          <Link href='/login' className='py-2 px-3 mt-2 border-2 border-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white text-center font-bold w-1/2 md:w-2/5'>
             Get Started
           </Link>
         </div>
