@@ -26,9 +26,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div>
-       <h1>Decide on what to add here</h1>
-      </div>
     </div>
   )
 }
