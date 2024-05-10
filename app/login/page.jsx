@@ -11,7 +11,7 @@ const Login = () => {
           <div className='border-t-2 border-green-600 w-[50px]' />
           <p className='text-sm'>Manage stock inventory and invoices effortlessly to ensure seamless operations and meet customer demands efficiently.</p>
           <Link href='/' className='py-2 px-3 mt-2 border-2 border-green-600 rounded-md hover:bg-green-700 cursor-pointer text-white text-center font-bold w-1/2'>
-            Get Started
+            Home page
           </Link>
         </div>
         <form action={authenticate} className='flex flex-col justify-center gap-7 w-full md:w-1/2 px-3 md:px-0 md:pr-8 '>
