@@ -5,7 +5,7 @@ import {authenticate} from '../lib/actions'
 const Login = () => {
   return (
     <div className='w-screen h-screen flex items-center justify-center'>
-      <div className='flex bg-slate-900 rounded-lg w-full md:w-3/4 h-[500px] gap-8 mx-2 md:mx-0'>
+      <div className='flex flex-row bg-slate-900 rounded-lg w-full md:w-3/4 h-[500px] gap-8 mx-2 md:mx-0'>
         <div className="hidden md:flex flex-col w-1/2 p-8 justify-center gap-6 bg-[url('../../public/login.svg')] bg-cover bg-no-repeat bg-center">
           <h1 className='text-3xl font-bold'>Welcome!</h1>
           <div className='border-t-2 border-green-600 w-[50px]' />
