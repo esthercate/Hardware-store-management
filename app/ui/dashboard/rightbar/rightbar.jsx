@@ -52,9 +52,7 @@ const RightBar = () => {
     <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
       <div className='flex gap-3'>
         <h2 className='mb-5 font-light text-xl text-slate-400'>Restock Alert</h2>
-        {/* //!TODO: If there is no restock needed the sign should be green
-         and display products about to need restock */}
-        <MdWarning size={22} color='red' />
+        <MdWarning size={22} color={restockData.length > 0 ? 'red' : 'green'} />
       </div>
       <div>
         <AlertCard restockData={restockData} />

@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {authenticate} from '../lib/actions'
+// import {authenticate} from '../lib/actions'
 
 const Login = () => {
   return (
@@ -14,7 +14,7 @@ const Login = () => {
             Home page
           </Link>
         </div>
-        <form action={authenticate} className='flex flex-col justify-center gap-7 w-full md:w-1/2 px-3 md:px-0 md:pr-8 '>
+        <form className='flex flex-col justify-center gap-7 w-full md:w-1/2 px-3 md:px-0 md:pr-8 '>
           <h1 className='text-3xl font-bold mb-3'>Login</h1>
           <input type='text' placeholder='Username' name='username' className='p-5 border-solid border-2 border-slate-700 rounded-md bg-transparent' />
           <input type='password' placeholder='Password' name='password' className='p-5 border-solid border-2 border-slate-700 rounded-md bg-transparent' />
