@@ -3,48 +3,48 @@ import { MdWarning } from 'react-icons/md'
 import AlertCard from './alertCard/alertCard'
 
 const restockData = [
-  // {
-  //   product_name: 'Cement',
-  //   Remaining: 3,
-  //   unit: 'bags',
-  //   details: '',
-  // },
-  // {
-  //   product_name: 'Nails',
-  //   Remaining: 2,
-  //   unit: 'kgs',
-  //   details: '3 inches',
-  // },
-  // {
-  //   product_name: 'bulbs',
-  //   Remaining: 5,
-  //   unit: '',
-  //   details: 'Energy saving',
-  // },
-  // {
-  //   product_name: 'Wheelbarrow',
-  //   Remaining: 1,
-  //   unit: '',
-  //   details: '',
-  // },
-  // {
-  //   product_name: 'Matress',
-  //   Remaining: 1,
-  //   unit: '',
-  //   details: '',
-  // },
-  // {
-  //   product_name: 'Socket',
-  //   Remaining: 6,
-  //   unit: '',
-  //   details: '',
-  // },
-  // {
-  //   product_name: 'Spade',
-  //   Remaining: 3,
-  //   unit: '',
-  //   details: '',
-  // },
+  {
+    product_name: 'Cement',
+    Remaining: 3,
+    unit: 'bags',
+    details: '',
+  },
+  {
+    product_name: 'Nails',
+    Remaining: 2,
+    unit: 'kgs',
+    details: '3 inches',
+  },
+  {
+    product_name: 'bulbs',
+    Remaining: 5,
+    unit: '',
+    details: 'Energy saving',
+  },
+  {
+    product_name: 'Wheelbarrow',
+    Remaining: 1,
+    unit: '',
+    details: '',
+  },
+  {
+    product_name: 'Matress',
+    Remaining: 1,
+    unit: '',
+    details: '',
+  },
+  {
+    product_name: 'Socket',
+    Remaining: 6,
+    unit: '',
+    details: '',
+  },
+  {
+    product_name: 'Spade',
+    Remaining: 3,
+    unit: '',
+    details: '',
+  },
 ]
 
 const RightBar = () => {

@@ -49,7 +49,7 @@ const Sidebar = () => {
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-5'>
           <Image className='rounded-full' src='/profile.png' alt='avater' width='60' height='60' />
-          <div>
+          <div className='flex flex-col gap-2'>
             <h1 className='font-medium text-lg'>Charles Vuthi</h1>
             <span className='font-light text-md text-slate-400'>CEO</span>
           </div>
