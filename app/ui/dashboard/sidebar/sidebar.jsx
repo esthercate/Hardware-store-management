@@ -47,7 +47,7 @@ const Sidebar = () => {
   return (
     <div className='sticky top-10 min-h-screen'>
       <div className='flex items-center justify-between'>
-        <div className='flex flex-col md:flex-row items-center gap-5'>
+        <div className='flex flex-col md:flex-row items-center gap-6'>
           <Image className='rounded-full' src='/profile.png' alt='avater' width='60' height='60' />
           <div className='flex flex-col gap-2'>
             <h1 className='font-medium text-lg'>Charles Vuthi</h1>
