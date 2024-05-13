@@ -54,7 +54,7 @@ const Sidebar = () => {
             <span className='font-light text-md text-slate-400'>CEO</span>
           </div>
         </div>
-        <div>
+        <div className='hidden md:flex'>
           <BsBookmarkCheckFill size={24} fill='#22c55e' />
         </div>
       </div>
