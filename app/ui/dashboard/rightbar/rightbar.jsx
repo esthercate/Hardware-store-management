@@ -28,7 +28,7 @@ const restockData = [
     details: '',
   },
   {
-    product_name: 'Matress',
+    product_name: 'Mattress',
     Remaining: 1,
     unit: '',
     details: '',
