@@ -51,7 +51,7 @@ const RightBar = () => {
   return (
     <div className='h-[450px] bg-slate-900 p-5 rounded-lg'>
       <div className='flex gap-3'>
-        <h2 className='mb-5 font-light text-xl text-slate-400'>Restock Alert</h2>
+        <h2 className='mb-6 font-light text-xl text-slate-400'>Restock Alert</h2>
         <MdWarning size={22} color={restockData.length > 0 ? 'red' : 'green'} />
       </div>
       <div>
