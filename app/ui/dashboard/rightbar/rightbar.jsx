@@ -5,7 +5,7 @@ import AlertCard from './alertCard/alertCard'
 const restockData = [
   {
     product_name: 'Cement',
-    Remaining: 3,
+    Remaining: 1,
     unit: 'bags',
     details: '',
   },
