@@ -34,13 +34,13 @@ const restockData = [
     details: '',
   },
   {
-    product_name: 'Socket',
+    product_name: 'Sockets',
     Remaining: 6,
     unit: '',
     details: '',
   },
   {
-    product_name: 'Spade',
+    product_name: 'Spades',
     Remaining: 3,
     unit: '',
     details: '',
