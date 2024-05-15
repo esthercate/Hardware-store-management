@@ -7,7 +7,7 @@ const restockData = [
     product_name: 'Cement',
     Remaining: 1,
     unit: 'bags',
-    details: '',
+    details: '50kg',
   },
   {
     product_name: 'Nails',
